@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *:focus-visible {
+    @apply outline-pink-700;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-wide;
+    font-family: var(--header-font);
+  }
+  b, strong {
+    @apply font-medium;
+  }
+  @supports selector(:has(+ *) and :is(*)) {
+    a[target=_blank]:has(p, span)::after, a[target=_blank]:not(:has(img))::after {
+      @apply inline-block bg-current h-3 w-3 ml-1 mb-1;
+      mask-image: url("/assets/img/new-tab.svg");
+      mask-size: 100%;
+      mask-repeat: no-repeat;
+      content: "";
+    }
+  }
+}
+
+@layer components {
+  .animate-load {
+    @apply translate-y-4 opacity-0 animate-[load_400ms_ease-in-out_forwards];
+  }
+  @layer components {
+    @keyframes load {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
