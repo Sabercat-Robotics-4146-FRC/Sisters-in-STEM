@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Sisters in STEM",
     images: [
       {
-        url: "/assets/img/head-raw-large.png",
+        url: "/assets/img/stem-sisters.webp",
         width: 1200,
         height: 630,
         alt: title,
@@ -40,7 +40,7 @@ export const metadata = {
     description: description,
     images: [
       {
-        url: "/assets/img/head-raw-large.png",
+        url: "/assets/img/stem-sisters.webp",
         width: 1200,
         height: 630,
         alt: title,
