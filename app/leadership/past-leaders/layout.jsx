@@ -1,6 +1,6 @@
 const url = "https://www.sistersinstem.net";
-const title = "Our Privacy Policy";
-const description = "Your privacy is as important to us as it is to you. That's why we tell you how we handle your data.";
+const title = "Past Leaders";
+const description = "We wouldn't be here without our founders and those who came before us!";
 const locale = "en";
 export const metadata = {
   metadataBase: new URL(url),
@@ -35,10 +35,6 @@ export const metadata = {
       },
     ],
     creatorId: "1067297456",
-  },
-  robots: {
-    index: false,
-    follow: true,
   },
 };
 

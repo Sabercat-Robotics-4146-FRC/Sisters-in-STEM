@@ -7,9 +7,9 @@ import { validate } from "email-validator";
 export default function Page() {
   const ResponseRef = createRef();
 
-  const [Email, SetEmail] = useState();
-  const [Message, SetMessage] = useState();
-  const [Subject, SetSubject] = useState();
+  const [Email, SetEmail] = useState("");
+  const [Message, SetMessage] = useState("");
+  const [Subject, SetSubject] = useState("");
   const [InfoClasses, SetInfoClasses] = useState("hidden");
 
   async function SendEmail() {
@@ -82,7 +82,7 @@ export default function Page() {
           <header className="text-neutral-900">
             <h2 className="text-3xl">Contacting a Specific Person</h2>
           </header>
-          <p className="mb-2">If you ever need to contact a specific person, we have the perfect solution for you. Simply go to the <Link href="/members" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">members</Link> page, find the person you're trying to contact, and click the link next to the text "email," which should be found under their name. Note that only coaches and mentors are listed on this page; for security and privacy reasons, we do not store the information of the children in our program, and there is no way to contact them via our website.</p>
+          <p className="mb-2">If you'd like to contact a leader of SiS about anything, you can find their emails on our <Link href="/leadership" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">leadership</Link> page. Unfortuanetly, we do not currently have a page with a directory of volunteers. However, you may be able to find some volunteers on the <a target="_blank" rel="noopener noreferrer" href="https://www.sabercatrobotics.com/contact-information" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">contact information</a> page on Sabercat Robotics' website.</p>
         </section>
         <main className="flex flex-col flex-wrap justify-center items-center text-center">
           <header className="w-full sm:w-1/2 px-4 mb-4">

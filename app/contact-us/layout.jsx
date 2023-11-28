@@ -34,7 +34,7 @@ export const metadata = {
         alt: title,
       },
     ],
-    siteId: "1067297456",
+    creatorId: "1067297456",
   },
 };
 
