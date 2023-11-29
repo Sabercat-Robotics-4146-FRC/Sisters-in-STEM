@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
+    <main className="px-3 min-[320px]:px-6 lg:px-12 py-3 min-[320px]:py-6 lg:py-12">
       <header className="relative w-full m-auto px-5 py-20 text-center mb-6">
         <Image className="absolute inset-0 h-full w-full object-cover -z-[1] brightness-50 rounded-xl sm:rounded-3xl" src="/assets/img/15.jpg" alt="Leadership" width={672} height={228} quality={100} loading="eager" priority></Image>
         <h2 className="text-slate-100 text-4xl font-semibold drop-shadow-[0_0_10px_black]">Past Leaders</h2>
@@ -15,11 +15,11 @@ export default function Page() {
           <h3 className="text-3xl text-pink-600">Meet the Founders</h3>
         </header>
         <main className="text-neutral-900/75 flex flex-col flex-wrap gap-y-8">
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <aside className="w-full md:w-2/5">
+          <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap gap-x-8 justify-center">
+            <aside className="w-full lg:w-2/5">
               <Image src="/assets/img/eli-arnold.webp" className="object-cover h-full w-full rounded-xl" alt="Eli Arnold" width={450} height={400} quality={100} priority></Image>
             </aside>
-            <main className="md:w-2/5">
+            <main className="lg:w-2/5">
               <header>
                 <h4 className="text-2xl text-black">Eli Arnold</h4>
               </header>
@@ -29,8 +29,8 @@ export default function Page() {
               <p><b className="font-semibold">Where is She Now?</b> Now, Eli is a full-time student at ASU Barrett, the Honors College, Majoring in Computer Science and minoring in Organ performance. She is also a member of both Society of Women Engineers and Women in Computer Science.</p>
             </main>
           </section>
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <main className="md:w-2/5">
+          <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap gap-x-8 justify-center">
+            <main className="lg:w-2/5">
               <header>
                 <h4 className="text-2xl text-black">Kayli Battel</h4>
               </header>
@@ -39,15 +39,15 @@ export default function Page() {
               <p className="mb-2"><b className="font-semibold">High School Accomplishment:</b> Kayli was a member of the Visions art program at Scottsdale Museum of Contemporary Art and a Varsity volleyball player at Saguaro. She graduated from the Scottsdale Math and Science Academy with Distinction and from Saguaro as one of Saguaro's three Valedictorians her year. Because of her work on Sisters in STEM, Kayli was recognized as one of Junior Achievement's 2020 Arizona 18 Under 18 award recipients.</p>
               <p><b className="font-semibold">Where is She Now?</b> Kayli is attending Tufts University in Medford, Massachusetts. She is majoring in Human Factors Engineering and minoring in Engineering Education.</p>
             </main>
-            <aside className="w-full md:w-2/5">
+            <aside className="w-full lg:w-2/5">
               <Image src="/assets/img/kayli-battel.webp" className="object-cover h-full w-full rounded-xl" alt="Kayli Battel" width={450} height={400} quality={100} priority></Image>
             </aside>
           </section>
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <aside className="w-full md:w-2/5">
+          <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap gap-x-8 justify-center">
+            <aside className="w-full lg:w-2/5">
               <Image src="/assets/img/laney-olson.webp" className="object-cover h-full w-full rounded-xl" alt="Laney Olson" width={450} height={400} quality={100} priority></Image>
             </aside>
-            <main className="md:w-2/5">
+            <main className="lg:w-2/5">
               <header>
                 <h4 className="text-2xl text-black">Laney Olson</h4>
               </header>

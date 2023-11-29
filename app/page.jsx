@@ -22,7 +22,7 @@ export default function Home() {
           <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl md:max-w-[40%]">
             <h2 className="text-4xl">Our Initiatives</h2>
             <p className="mb-2">At Sisters in STEM (SiS), we inspire to guide our students into the interesting world of STEM, whether they are interested in Science, Technology, Engineering, or Math. Some of our events include our annual STEM celebration, our roadshow, and our "read to me" of <i>Jada Saves the Day!</i></p>
-            <Link href="/initiatives" className="z-[1] transition-colors duration-500 text-pink-600 overflow-clip border-2 px-6 py-3 leading-none border-pink-600 font-medium relative before:absolute before:h-full before:w-full before:-z-[1] before:scale-x-0 before:inset-0 before:bg-pink-600 before:origin-left before:transition-[transform,transform-origin] before:duration-[500ms,0ms] before:delay-[0ms,500ms] hover:before:scale-x-100 hover:before:origin-right focus-visible:before:scale-x-100 focus-visible:before:origin-right hover:text-slate-100 focus-visible:text-slate-100 mb-2">Learn More</Link>
+            <Link href="/initiatives" className="z-[1] transition-colors duration-500 text-pink-600 overflow-clip border-2 px-6 py-3 leading-none border-pink-600 font-medium relative before:absolute before:h-full before:w-full before:-z-[1] before:scale-x-0 before:inset-0 before:bg-pink-600 before:origin-left before:transition-[transform,transform-origin] before:duration-[500ms,0ms] before:delay-[0ms,500ms] hover:before:scale-x-100 hover:before:origin-right focus-visible:before:scale-x-100 focus-visible:before:origin-right hover:text-slate-100 focus-visible:text-slate-100 mb-2">Our Initiatives</Link>
           </main>
           <aside className="w-full md:w-1/2">
             <Image src="/assets/img/annual-celebration.webp" className="object-cover h-full w-full" alt="Boy looking through microscope to learn about biology." width={450} height={400} quality={100} priority></Image>
@@ -30,7 +30,7 @@ export default function Home() {
         </section>
         <section className="px-2 py-12 relative flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center text-center text-black">
           <aside className="w-full md:w-1/2">
-            <Image src="/assets/img/ultimate-family-play-date.webp" className="object-contain h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} priority></Image>
+            <Image src="/assets/img/ultimate-family-play-date.webp" className="object-contain p-2 h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} priority></Image>
           </aside>
           <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl md:max-w-[40%]">
             <h2 className="text-4xl">Come See Us!</h2>
