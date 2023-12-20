@@ -40,6 +40,16 @@ export const metadata = {
     index: false,
     follow: true,
   },
+  alternates: {
+    canonical: "/privacy-policy",
+    languages: {
+      "en": "/privacy-policy",
+      // Commented languages are not yet supported, and therefore should not be uncommented
+      // "es": "/es/privacy-policy",
+      // "fr": "/fr/privacy-policy",
+      // "ja": "/ja/privacy-policy",
+    },
+  },
 };
 
 export default function Layout({children}) {

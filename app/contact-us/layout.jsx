@@ -36,6 +36,15 @@ export const metadata = {
     ],
     creatorId: "1067297456",
   },
+  alternates: {
+    canonical: "/contact-us",
+    languages: {
+      "en": "/contact-us",
+      // "es": "/localization/es",
+      // "fr": "/localization/fr",
+      // "ja": "/localization/ja",
+    },
+  },
 };
 
 export default function Layout({children}) {

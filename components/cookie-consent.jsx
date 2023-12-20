@@ -1,3 +1,6 @@
+// Cookie consent for the whole website
+// Does not appear when cookie consent has been approved or declined
+// To-do: add "advanced" consent option (allows you to pick and choose what cookies you want to and don't want to accept)
 "use client";
 import { useCookies } from "next-client-cookies";
 import { useEffect } from "react";

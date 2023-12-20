@@ -36,6 +36,16 @@ export const metadata = {
     ],
     creatorId: "1067297456",
   },
+  alternates: {
+    canonical: "/leadership",
+    languages: {
+      "en": "/leadership",
+      // Commented languages are not yet supported, and therefore should not be uncommented
+      // "es": "/es/leadership",
+      // "fr": "/fr/leadership",
+      // "ja": "/ja/leadership",
+    },
+  },
 };
 
 export default function Layout({children}) {

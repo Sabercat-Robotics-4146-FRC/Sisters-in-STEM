@@ -159,9 +159,10 @@ export const metadata = {
     canonical: "/",
     languages: {
       "en": "/",
-      // "es": "/localization/es",
-      // "fr": "/localization/fr",
-      // "ja": "/localization/ja",
+      // Commented languages are not yet supported, and therefore should not be uncommented
+      // "es": "/es",
+      // "fr": "/fr",
+      // "ja": "/ja",
     },
   },
   robots: {
@@ -170,18 +171,19 @@ export const metadata = {
   },
 };
 
+
 const PoppinsFont = Poppins({
   adjustFontFallback: true,
   display: "swap",
   fallback: ["Arial", "sans-serif"],
-  subsets: ["latin-ext"],
+  subsets: ["latin"],
   weight: ["400", "500", "600"],
 });
 const FredokaFont = Fredoka({
   adjustFontFallback: true,
   display: "swap",
   fallback: ["Arial", "sans-serif"],
-  subsets: ["latin-ext"],
+  subsets: ["latin"],
   variable: "--header-font",
 });
 export default function RootLayout({children}) {
@@ -190,7 +192,7 @@ export default function RootLayout({children}) {
       <body className="text-lg leading-7 text-neutral-900">
         <Header />
         {children}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-8MHGG86QKT" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZS97296VCZ" />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -202,7 +204,7 @@ export default function RootLayout({children}) {
               "analytics_storage": "denied",
             });
             gtag("js", new Date());
-            gtag("config", "G-8MHGG86QKT");
+            gtag("config", "G-ZS97296VCZ");
           `}
         </Script>
         <ClientCookiesProvider value={cookies().getAll()}>

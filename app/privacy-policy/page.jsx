@@ -1,3 +1,8 @@
+// WARNING!
+// THIS PAGE SHOULD NOT BE CHANGED UNLESS OTHERWISE TOLD
+// (CHANGES COULD LEAD TO LEGAL TROUBLE)
+// BE CAREFUL WHEN EDITING!
+import InlineLink from "@/components/inline-link";
 import PageHeader from "@/components/page-header";
 
 export default function Page() {
@@ -84,13 +89,13 @@ export default function Page() {
           <header className="mb-2">
             <h3 className="text-2xl">Contact Us</h3>
           </header>
-          <p>If you have any questions or concerns about our Privacy Policy, or if you would like to request access to or correction of your personal information, please contact us at <a href="mailto:contact@sistersinstem.net" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">contact@sistersinstem.net</a>.</p>
+          <p>If you have any questions or concerns about our Privacy Policy, or if you would like to request access to or correction of your personal information, please contact us at <InlineLink external href="mailto:contact@sistersinstem.net">contact@sistersinstem.net</InlineLink>.</p>
           <br />
           <p>Last Updated: November 7th, 2023</p>
           <br />
           <p>Sisters in STEM</p>
           <p>Saguaro High School</p>
-          <a href="https://maps.app.goo.gl/25SioJ1JU4hxqWKU9" target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">6250 N 82nd St</a>
+          <a  target="_blank" rel="noopener noreferrer" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">6250 N 82nd St</a>
           <p>Scottsdale, AZ 85250</p>
         </section>
       </main>

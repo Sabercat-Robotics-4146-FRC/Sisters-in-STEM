@@ -36,6 +36,16 @@ export const metadata = {
     ],
     creatorId: "1067297456",
   },
+  alternates: {
+    canonical: "/leadership/past-leaders",
+    languages: {
+      "en": "/leadership/past-leaders",
+      // Commented languages are not yet supported, and therefore should not be uncommented
+      // "es": "/es/leadership/past-leaders",
+      // "fr": "/fr/leadership/past-leaders",
+      // "ja": "/ja/leadership/past-leaders",
+    },
+  },
 };
 
 export default function Layout({children}) {

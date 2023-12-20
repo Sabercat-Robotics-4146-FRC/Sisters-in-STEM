@@ -1,5 +1,6 @@
+// Footer for the whole website
 import Image from "next/image";
-import Link from "next/link";
+import InlineLink from "@/components/inline-link";
 
 export default function Footer() {
   return (
@@ -7,37 +8,38 @@ export default function Footer() {
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">What We Do</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/about-us" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">About Us</Link>
-          <Link href="/initiatives" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Initianatives</Link>
+          <InlineLink href="/about-us" white>About Us</InlineLink>
+          <InlineLink href="/initiatives" white>Initiatives</InlineLink>
         </nav>
       </section>
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Support</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/supporters" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Supporters</Link>
-          <Link href="/leadership" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Leadership</Link>
+          <InlineLink href="/supporters" white>Supporters</InlineLink>
+          <InlineLink href="/leadership" white>Leadership</InlineLink>
+          <InlineLink href="/leadership/past-leaders" white>Past Leaders</InlineLink>
         </nav>
       </section>
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Contact</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/contact-us" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Contact Us</Link>
-          <a href="mailto:contact@sistersinstem.net" target="_blank" rel="noopener noreferrer" className="max-w-fit fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300 break-all">
-            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 512 512" className="inline mr-1 mb-0.5">
+          <InlineLink href="/contact-us" white>Contact Us</InlineLink>
+          <InlineLink external href="mailto:contact@sistersinstem.net" white>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 512 512" className="fill-current inline mr-1 mb-0.5">
               <title>Envelope Icon</title>
               <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
             </svg>
             <span className="sr-only">Envelope Icon</span>
             <p className="inline">contact@sistersinstem.net</p>
-          </a>
-          <a href="https://maps.app.goo.gl/25SioJ1JU4hxqWKU9" target="_blank" rel="noopener noreferrer" className="max-w-fit fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" className="inline mr-1 mb-1.5">
+          </InlineLink>
+          <InlineLink external href="https://maps.app.goo.gl/25SioJ1JU4hxqWKU9" white>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" className="fill-current inline mr-1 mb-1.5">
               <title>Location Icon</title>
               <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
             </svg>
             <span className="sr-only">Location Icon</span>
             <p className="inline">6250 N 82nd St, Scottsdale, AZ 85250</p>
-          </a>
+          </InlineLink>
         </nav>
       </section>
       <footer className="mt-6 w-full flex flex-col flex-wrap min-[800px]:flex-row min-[800px]:flex-nowrap justify-center items-center divide-y min-[800px]:divide-x min-[800px]:divide-y-0 divide-slate-100/70 text-sm text-slate-100/70">

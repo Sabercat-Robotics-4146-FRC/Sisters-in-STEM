@@ -36,6 +36,16 @@ export const metadata = {
     ],
     creatorId: "1067297456",
   },
+  alternates: {
+    canonical: "/supporters",
+    languages: {
+      "en": "/supporters",
+      // Commented languages are not yet supported, and therefore should not be uncommented
+      // "es": "/es/supporters",
+      // "fr": "/fr/supporters",
+      // "ja": "/ja/supporters",
+    },
+  },
 };
 
 export default function Layout({children}) {
