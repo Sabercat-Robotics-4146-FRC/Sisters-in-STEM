@@ -1,13 +1,9 @@
-import Image from "next/image";
+import PageHeader from "@/components/page-header";
 
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <header className="relative w-full m-auto px-5 py-20 text-center mb-6">
-        <Image className="absolute inset-0 h-full w-full object-cover -z-[1] brightness-50 rounded-xl sm:rounded-3xl" src="/assets/img/sistersinstem.jpg" alt="Privacy Policy" width={512} height={736} quality={100} priority></Image>
-        <h2 className="text-slate-100 text-4xl font-semibold">Privacy Policy</h2>
-        <p className="text-white/75 text-xl font-medium">Your privacy is as important to us as it is to you. That's why we tell you how we handle your data.</p>
-      </header>
+      <PageHeader title="Privacy Policy" description="Your privacy is as important to us as it is to you. That's why we tell you how we handle your data." src="/assets/img/sistersinstem.jpg" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-2">
           <h2 className="text-3xl">Sisters in STEM Privacy Policy</h2>

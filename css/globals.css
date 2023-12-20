@@ -11,7 +11,7 @@
     font-family: var(--header-font);
   }
   b, strong {
-    @apply font-medium;
+    @apply font-semibold;
   }
   @supports selector(:has(+ *) and :is(*)) {
     a[target=_blank]:has(p, span)::after, a[target=_blank]:not(:has(img))::after {
@@ -20,20 +20,6 @@
       mask-size: 100%;
       mask-repeat: no-repeat;
       content: "";
-    }
-  }
-}
-
-@layer components {
-  .animate-load {
-    @apply translate-y-4 opacity-0 animate-[load_400ms_ease-in-out_forwards];
-  }
-  @layer components {
-    @keyframes load {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
   }
 }

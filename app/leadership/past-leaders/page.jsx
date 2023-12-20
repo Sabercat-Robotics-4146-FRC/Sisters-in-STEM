@@ -1,15 +1,10 @@
-"use client";
+import PageHeader from "@/components/page-header";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 lg:px-12 py-3 min-[320px]:py-6 lg:py-12">
-      <header className="relative w-full m-auto px-5 py-20 text-center mb-6">
-        <Image className="absolute inset-0 h-full w-full object-cover -z-[1] brightness-50 rounded-xl sm:rounded-3xl" src="/assets/img/15.jpg" alt="Leadership" width={672} height={228} quality={100} loading="eager" priority></Image>
-        <h2 className="text-slate-100 text-4xl font-semibold drop-shadow-[0_0_10px_black]">Past Leaders</h2>
-        <p className="text-white/75 text-xl font-medium drop-shadow-[0_0_10px_black]">We wouldn't be here without our founders and those who came before us!</p>
-      </header>
+      <PageHeader title="Past Leaders" description="We wouldn't be here without our founders and those who came before us!" src="/assets/img/15.jpg" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
           <h3 className="text-3xl text-pink-600">Meet the Founders</h3>

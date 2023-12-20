@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { createRef, useState } from "react";
 import { validate } from "email-validator";
+import PageHeader from "@/components/page-header";
 
 export default function Page() {
   const ResponseRef = createRef();
@@ -62,11 +63,7 @@ export default function Page() {
   
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <header className="relative w-full m-auto px-5 py-20 text-center mb-6">
-        <Image className="absolute inset-0 h-full w-full object-cover -z-[1] brightness-50 rounded-xl sm:rounded-3xl" src="/assets/img/15.jpg" alt="Contact Us" width={672} height={228} quality={100} loading="eager" priority></Image>
-        <h2 className="text-slate-100 text-4xl font-semibold drop-shadow-[0_0_10px_black]">Contact Us</h2>
-        <p className="text-white/75 text-xl font-medium drop-shadow-[0_0_10px_black]">If you ever have any inquries, feel free to reach out to us! We typically respond in 3 - 5 business days.</p>
-      </header>
+      <PageHeader title="Contact Us" description="If you ever have any inquries, feel free to reach out to us! We typically respond in 3 - 5 business days." src="/assets/img/15.jpg" />
       <main className="px-6 min-[480px]:px-12">
         <header className="text-neutral-900 mb-4">
           <h2 className="text-3xl">Methods of Contact</h2>

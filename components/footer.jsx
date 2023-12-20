@@ -7,22 +7,22 @@ export default function Footer() {
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">What We Do</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/about-us" className="transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">About Us</Link>
-          <Link href="/initiatives" className="transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Initianatives</Link>
+          <Link href="/about-us" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">About Us</Link>
+          <Link href="/initiatives" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Initianatives</Link>
         </nav>
       </section>
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Support</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/supporters" className="transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Supporters</Link>
-          <Link href="/leadership" className="transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Leadership</Link>
+          <Link href="/supporters" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Supporters</Link>
+          <Link href="/leadership" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Leadership</Link>
         </nav>
       </section>
       <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Contact</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
-          <Link href="/contact-us" className="transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Contact Us</Link>
-          <a href="mailto:contact@sistersinstem.net" target="_blank" rel="noopener noreferrer" className="fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300 break-all">
+          <Link href="/contact-us" className="max-w-fit transition-colors duration-300 hover:text-pink-300 focus-visible:text-pink-300">Contact Us</Link>
+          <a href="mailto:contact@sistersinstem.net" target="_blank" rel="noopener noreferrer" className="max-w-fit fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300 break-all">
             <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 512 512" className="inline mr-1 mb-0.5">
               <title>Envelope Icon</title>
               <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="sr-only">Envelope Icon</span>
             <p className="inline">contact@sistersinstem.net</p>
           </a>
-          <a href="https://maps.app.goo.gl/25SioJ1JU4hxqWKU9" target="_blank" rel="noopener noreferrer" className="fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300">
+          <a href="https://maps.app.goo.gl/25SioJ1JU4hxqWKU9" target="_blank" rel="noopener noreferrer" className="max-w-fit fill-slate-100 transition-colors duration-300 hover:text-pink-300 hover:fill-pink-300 focus-visible:text-pink-300 focus-visible:fill-pink-300">
             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" className="inline mr-1 mb-1.5">
               <title>Location Icon</title>
               <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path>
@@ -45,7 +45,7 @@ export default function Footer() {
           <Image src="/assets/img/head-raw-large-white.png" alt="Sabercat Robotics (FIRST team #4146) logo" width={40} height={40} quality={100}></Image>
         </a>
         <p className="px-2 min-[800px]:px-4 py-4 inline">Copyright &copy; 2023 Sabercat Robotics FIRST Team #4146. All rights reserved.</p>
-        <Link href="/privacy-policy" className="px-2 min-[800px]:px-4 py-4 inline">Privacy Policy</Link>
+        <a href="/privacy-policy" className="px-2 min-[800px]:px-4 py-4 inline">Privacy Policy</a>
       </footer>
     </footer>
   );
