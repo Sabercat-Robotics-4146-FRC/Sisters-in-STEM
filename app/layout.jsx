@@ -207,7 +207,7 @@ export default function RootLayout({children}) {
             gtag("config", "G-ZS97296VCZ");
           `}
         </Script>
-        <ClientCookiesProvider value={cookies().getAll()}>
+        <ClientCookiesProvider>
           <CookieConsent />
         </ClientCookiesProvider>
         <Footer />

@@ -54,10 +54,10 @@ export default function Page() {
           </header>
           <main className="flex flex-col flex-wrap lg:h-[360px] lg:flex-row lg:flex-nowrap justify-center items-center px-8">
             <button onClick={ExpandImage} className="object-cover w-full lg:h-full">
-              <Image src="/assets/img/sistersinstem.jpg" alt="Picture 1 of our volunteers" width={360} height={240} className="rounded-t-xl lg:rounded-r-none lg:rounded-l-xl object-cover h-full w-full"></Image>
+              <Image sizes="(min-width: 1024px) 40vw, 100vw" src="/assets/img/sistersinstem.jpg" alt="Picture 1 of our volunteers" width={360} height={240} className="rounded-t-xl lg:rounded-r-none lg:rounded-l-xl object-cover h-full w-full"></Image>
             </button>
             <button onClick={ExpandImage} className="object-cover w-full lg:h-full">
-              <Image src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} className="rounded-b-xl lg:rounded-l-none lg:rounded-r-xl object-cover h-full w-full"></Image>
+              <Image sizes="(min-width: 1024px) 40vw, 100vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} className="rounded-b-xl lg:rounded-l-none lg:rounded-r-xl object-cover h-full w-full"></Image>
             </button>
           </main>
         </section>
