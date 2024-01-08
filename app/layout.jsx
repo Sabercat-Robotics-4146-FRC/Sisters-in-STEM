@@ -5,7 +5,6 @@ import CookieConsent from "/components/cookie-consent";
 import Footer from "/components/footer";
 import Script from "next/script";
 import { Fredoka, Poppins } from "next/font/google";
-import { cookies } from "next/headers";
 
 const url = "https://www.sistersinstem.net";
 const title = "Sisters in STEM";
@@ -170,7 +169,6 @@ export const metadata = {
     follow: true,
   },
 };
-
 
 const PoppinsFont = Poppins({
   adjustFontFallback: true,

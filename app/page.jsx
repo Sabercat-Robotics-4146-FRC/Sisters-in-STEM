@@ -1,7 +1,29 @@
 "use client";
-import LinkButton from "@/components/link-button";
+import InlineLink from "/components/inline-link";
+import LinkButton from "/components/link-button";
 import Image from "next/image";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "/components/ui/card";
 
+// Questions and answers for the FAQ section of the home page
+const FAQ = [
+  {
+    question: "How can I get SiS to come to my community?",
+    answer: <CardDescription>If you would like SiS to come to your community, feel free to <InlineLink href="/contact-us">contact us</InlineLink> and include information about yourself, the community you want SiS to come to, and why we should come.</CardDescription>,
+  },
+  {
+    question: "What is Sisters in STEM?",
+    answer: <CardDescription>SiS is a multi-faceted STEM outreach program sponsored through the Scottsdale Math & Science Academy at Saguaro High School. Launched, designed and led entirely by our students, SiS provides STEM outreach activities and initiatives for young learners in grades K-12. For more information on our STEM initiatives, visit our <InlineLink href="/about-us">about us</InlineLink> page.</CardDescription>,
+  },
+];
+// Source's for the images shown at the bottom of the home page
+const ImageCarousel = [
+  "stem-sisters.webp",
+  "volunteers.webp",
+  "roadshow.webp",
+  "jada-reading.webp",
+];
 export default function Home() {
  return (
     <main>
@@ -10,7 +32,7 @@ export default function Home() {
           <Image src="/assets/img/stem-sisters.webp" className="object-cover h-full w-full" alt="3 photos consisting of female students learning about STEM through experiments." width={450} height={400} quality={100} priority sizes="(max-width: 768px) 100vw, 40vw"></Image>
         </aside>
         <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl">
-          <Image className="w-28" src="/assets/img/logo.webp" alt="Sisters in STEM robot" height={200} width={200} quality={100} sizes="200px"></Image>
+          <Image className="w-28" src="/assets/img/logo.webp" alt="Sisters in STEM robot" height={200} width={200} quality={100} sizes="112px"></Image>
           <h2 className="text-4xl">Sisters in STEM</h2>
           <p className="mb-2">By students, for students.</p>
           <LinkButton href="/about-us">Learn Who We Are</LinkButton>
@@ -43,22 +65,56 @@ export default function Home() {
             <h2 className="text-3xl">Frequently Asked Questions</h2>
             <p>Commonly asked questions about Sisters in STEM, answered right here.</p>
           </header>
-          <main className="w-full flex flex-col flex-wrap md:flex-row md:flex-nowrap items-start justify-center gap-x-4">
-            <section className="overflow-clip flex flex-col flex-wrap justify-center items-center w-full md:w-1/3 mt-2">
-              <header>
-                <h3 className="text-2xl">Question?</h3>
-              </header>
-              <p>Answer.</p>
-            </section>
+          <main className="px-16">
+            <Carousel className="p-8 w-full flex items-center justify-start gap-x-4">
+              <CarouselContent>
+                {
+                  FAQ.map(function(Information) {
+                    return (
+                      <CarouselItem key={Information.question} className="sm:basis-1/2 text-start">
+                        <Card>
+                          <CardContent>
+                            <CardHeader>
+                              <CardTitle className="text-center">{Information.question}</CardTitle>
+                            </CardHeader>
+                            {Information.answer}
+                          </CardContent>
+                        </Card>
+                      </CarouselItem>
+                    );
+                  })
+                }
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </main>
         </section>
         <section className="flex flex-col flex-wrap justify-center items-center mb-8">
-          <header className="px-6">
+          <header className="px-6 mb-4">
             <h2 className="text-3xl">Sisters in STEM: Past Events</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facilis asperiores commodi eligendi natus, libero nostrum praesentium saepe doloribus, nisi minima fuga voluptates vitae tempora perferendis incidunt nihil aspernatur fugiat.</p>
           </header>
-          <main>
-            <p>[Image carousel here]</p>
+          <main className="px-16">
+            <Carousel plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}>
+              <CarouselContent>
+                {
+                  ImageCarousel.map(function(ImageSource) {
+                    return (
+                      <CarouselItem key={ImageSource} className="sm:basis-1/2">
+                        <Image src={`/assets/img/${ImageSource}`} sizes="100vw" width={600} height={400} loading="eager" className="rounded-lg" />
+                      </CarouselItem>
+                    );
+                  })
+                }
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </main>
         </section>
       </main>
