@@ -1,5 +1,5 @@
 "use client";
-import PageHeader from "@/components/page-header";
+import PageHeader from "/components/page-header";
 import Image from "next/image";
 import { createRoot } from "react-dom/client";
 
@@ -27,7 +27,7 @@ export default function Page() {
               </svg>
               <p className="sr-only">Close</p>
             </button>
-            <img srcSet={ButtonImage.srcset} src={ButtonImage.src} alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} className="h-[75vw] sm:h-[50vw] max-h-[90%] w-auto"></img>
+            <img srcSet={ButtonImage.srcset} src={ButtonImage.src} sizes={ButtonImage.sizes} alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} className="h-[75vw] sm:h-[50vw] max-h-[90%] w-auto"></img>
             <p className="text-white text-xl text-center w-3/4 sm:w-1/2">{ButtonImage.alt}</p>
           </>
         );

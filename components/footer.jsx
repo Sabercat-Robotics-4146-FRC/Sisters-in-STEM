@@ -1,6 +1,6 @@
 // Footer for the whole website
 import Image from "next/image";
-import InlineLink from "@/components/inline-link";
+import InlineLink from "/components/inline-link";
 
 export default function Footer() {
   return (

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { createRef, useState } from "react";
 import { validate } from "email-validator";
-import PageHeader from "@/components/page-header";
+import PageHeader from "/components/page-header";
 
 export default function Page() {
   const ResponseRef = createRef();
@@ -67,19 +67,19 @@ export default function Page() {
       <main className="px-6 min-[480px]:px-12">
         <header className="text-neutral-900 mb-4">
           <h2 className="text-3xl">Methods of Contact</h2>
-          <p>Depending on who you want to contact, there are different ways to go about it. We'll show you each way you can go about it, so then we both can have a pleasant conversation and experience.</p>
+          <p>Depending on who you want to contact, there are different ways to go about it. We&apos;ll show you each way you can go about it, so then we both can have a pleasant conversation and experience.</p>
         </header>
         <section className="text-neutral-900/80 mb-4">
           <header className="text-neutral-900">
             <h2 className="text-3xl">Contacting the Team</h2>
           </header>
-          <p>We have done our best to make contacting our team as easy as possible. That's why we created a contact form that can be filled out within a minute. Simply go to the bottom of the page, fill out each field, and click the "Submit" button.</p>
+          <p>We have done our best to make contacting our team as easy as possible. That&apos;s why we created a contact form that can be filled out within a minute. Simply go to the bottom of the page, fill out each field, and click the &quot;Submit&quot; button.</p>
         </section>
         <section className="text-neutral-900/80 mb-4">
           <header className="text-neutral-900">
             <h2 className="text-3xl">Contacting a Specific Person</h2>
           </header>
-          <p className="mb-2">If you'd like to contact a leader of SiS about anything, you can find their emails on our <Link href="/leadership" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">leadership</Link> page. Unfortuanetly, we do not currently have a page with a directory of volunteers. However, you may be able to find some volunteers on the <a target="_blank" rel="noopener noreferrer" href="https://www.sabercatrobotics.com/contact-information" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">contact information</a> page on Sabercat Robotics' website.</p>
+          <p className="mb-2">If you&apos;d like to contact a leader of SiS about anything, you can find their emails on our <Link href="/leadership" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">leadership</Link> page. Unfortuanetly, we do not currently have a page with a directory of volunteers. However, you may be able to find some volunteers on the <a target="_blank" rel="noopener noreferrer" href="https://www.sabercatrobotics.com/contact-information" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">contact information</a> page on Sabercat Robotics&apos; website.</p>
         </section>
         <main className="flex flex-col flex-wrap justify-center items-center text-center">
           <header className="w-full sm:w-1/2 px-4 mb-4">

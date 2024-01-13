@@ -2,8 +2,8 @@
 // THIS PAGE SHOULD NOT BE CHANGED UNLESS OTHERWISE TOLD
 // (CHANGES COULD LEAD TO LEGAL TROUBLE)
 // BE CAREFUL WHEN EDITING!
-import InlineLink from "@/components/inline-link";
-import PageHeader from "@/components/page-header";
+import InlineLink from "/components/inline-link";
+import PageHeader from "/components/page-header";
 
 export default function Page() {
   return (
@@ -59,7 +59,7 @@ export default function Page() {
           <header className="mb-2">
             <h3 className="text-2xl">Google Analytics</h3>
           </header>
-          <p>We use Google Analytics, a web analytics service provided by Google Inc., to collect and analyze information about the usage of our website. Google Analytics may use cookies and other tracking technologies to gather information about website visitors. You can learn more about Google's data practices and opt-out options by visiting Google's Privacy Policy and Terms of Service.</p>
+          <p>We use Google Analytics, a web analytics service provided by Google Inc., to collect and analyze information about the usage of our website. Google Analytics may use cookies and other tracking technologies to gather information about website visitors. You can learn more about Google&apos;s data practices and opt-out options by visiting Google&apos;s Privacy Policy and Terms of Service.</p>
         </section>
         <section className="mb-2">
           <header className="mb-2">
@@ -75,7 +75,7 @@ export default function Page() {
         </section>
         <section className="mb-2">
           <header className="mb-2">
-            <h3 className="text-2xl">Children's Privacy</h3>
+            <h3 className="text-2xl">Children&apos;s Privacy</h3>
           </header>
           <p>Our website is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13 without parental consent. If you believe we have unintentionally collected personal information from a child under 13, please contact us to have the information removed.</p>
         </section>

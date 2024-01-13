@@ -33,6 +33,15 @@ export default function CookieConsent() {
     }, 500);
   };
 
+  useEffect(function() {
+    if (CookieStore.get("Consent") === ConsentCookies[0]) {
+      window.gtag("consent", "update", {
+        "ad_storage": "granted",
+        "analytics_storage": "granted",
+      });
+    };
+  });
+
   if (ConsentCookies.indexOf(CookieStore.get("Consent")) < 0) {
     return (
       <section className="transition-opacity duration-500 bg-white px-4 py-4 shadow-black shadow-[0_8px_16px] w-full flex flex-col flex-wrap xl:flex-row xl:flex-nowrap justify-center items-center xl:justify-between fixed bottom-0 z-50" id="CookieConsent">
@@ -43,14 +52,5 @@ export default function CookieConsent() {
         </nav>
       </section>
     );
-  } else if (CookieStore.get("Consent") === ConsentCookies[0]) {
-    useEffect(function() {
-      window.gtag("consent", "update", {
-        "ad_storage": "granted",
-        "analytics_storage": "granted",
-      });
-    });
   };
-  // Return nothing
-  return (<></>);
 };

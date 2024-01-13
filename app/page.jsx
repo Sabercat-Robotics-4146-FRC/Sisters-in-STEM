@@ -43,7 +43,7 @@ export default function Home() {
         <section className="px-2 py-12 relative flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center text-center text-black">
           <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl md:max-w-[40%]">
             <h2 className="text-4xl">Our Initiatives</h2>
-            <p className="mb-2">At Sisters in STEM (SiS), we inspire to guide our students into the interesting world of STEM, whether they are interested in Science, Technology, Engineering, or Math. Some of our events include our annual STEM celebration, our roadshow, and our "read to me" of <i>Jada Saves the Day!</i></p>
+            <p className="mb-2">At Sisters in STEM (SiS), we inspire to guide our students into the interesting world of STEM, whether they are interested in Science, Technology, Engineering, or Math. Some of our events include our annual STEM celebration, our roadshow, and our &quot;read to me&quot; of <i>Jada Saves the Day!</i></p>
             <LinkButton href="/initiatives">Our Initiatives</LinkButton>
           </main>
           <aside className="w-full md:w-1/2">
@@ -52,12 +52,12 @@ export default function Home() {
         </section>
         <section className="px-2 py-12 relative flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center text-center text-black">
           <aside className="w-full md:w-1/2">
-            <Image src="/assets/img/ultimate-family-play-date.webp" className="object-contain p-2 h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} sizes="(max-width: 768px) 100vw, 40vw"></Image>
+            <Image src="/assets/img/barrett-jackson.jpg" className="object-contain p-2 h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} sizes="(max-width: 768px) 100vw, 40vw"></Image>
           </aside>
           <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl md:max-w-[40%]">
             <h2 className="text-4xl">Come See Us!</h2>
-            <p className="mb-2">SiS will be at the Scottsdale Public Library Ultimate Family Playdate! Come visit us on Saturday, December 9th, between 9 a.m. and 1:30 p.m. at the Scottsdale Civic Center.</p>
-            <LinkButton href="https://www.scottsdalelibrary.org/family-play-date" external>Learn More</LinkButton>
+            <p className="mb-2">SiS will be at the Barrett-Jackson STEM Fest! Come visit us on January 20th from 8 A.M. to 5 P.M. at WestWorld of Scottsdale.</p>
+            <LinkButton href="https://barrett-jackson.com/" external>Learn More</LinkButton>
           </main>
         </section>
         <section className="flex flex-col flex-wrap justify-center items-center mb-8">
@@ -65,13 +65,13 @@ export default function Home() {
             <h2 className="text-3xl">Frequently Asked Questions</h2>
             <p>Commonly asked questions about Sisters in STEM, answered right here.</p>
           </header>
-          <main className="px-16">
-            <Carousel className="p-8 w-full flex items-center justify-start gap-x-4">
+          <main className="px-6 lg:px-16">
+            <Carousel className="p-8 w-full hidden lg:flex items-center justify-start gap-x-4">
               <CarouselContent>
                 {
                   FAQ.map(function(Information) {
                     return (
-                      <CarouselItem key={Information.question} className="sm:basis-1/2 text-start">
+                      <CarouselItem key={Information.question} className="md:basis-1/2 text-start">
                         <Card>
                           <CardContent>
                             <CardHeader>
@@ -88,6 +88,20 @@ export default function Home() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
+            {
+              FAQ.map(function(Information) {
+                return (
+                  <Card className="lg:hidden mb-4" key={Information.question}>
+                    <CardContent>
+                      <CardHeader>
+                        <CardTitle className="text-center">{Information.question}</CardTitle>
+                      </CardHeader>
+                      {Information.answer}
+                    </CardContent>
+                  </Card>
+                );
+              })
+            }
           </main>
         </section>
         <section className="flex flex-col flex-wrap justify-center items-center mb-8">
@@ -105,7 +119,7 @@ export default function Home() {
                 {
                   ImageCarousel.map(function(ImageSource) {
                     return (
-                      <CarouselItem key={ImageSource} className="sm:basis-1/2">
+                      <CarouselItem key={ImageSource} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
                         <Image src={`/assets/img/${ImageSource}`} sizes="100vw" width={600} height={400} loading="eager" className="rounded-lg" />
                       </CarouselItem>
                     );

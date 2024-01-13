@@ -1,7 +1,22 @@
-import LinkButton from "@/components/link-button";
-import PageHeader from "@/components/page-header";
+import LinkButton from "/components/link-button";
+import PageHeader from "/components/page-header";
 import Image from "next/image";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "/components/ui/card";
 
+export function Leader({ name, position, src, children }) {
+  return (
+    <Card className="basis-full lg:basis-1/2">
+      <CardHeader>
+        <CardTitle className="text-4xl">{name}</CardTitle>
+        <CardDescription className="text-xl">{position}</CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center gap-x-4">
+        <Image src={`/assets/img/${src}`} className="basis-1/2 object-cover rounded-lg" alt={`Image of ${name}`} width={250} height={250} sizes="(max-width: 768px) 100vw, 40vw"></Image>
+        <p className="basis-1/2">{children}</p>
+      </CardContent>
+    </Card>
+  );
+};
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
@@ -10,60 +25,39 @@ export default function Page() {
         <header className="mb-4">
           <h3 className="text-3xl text-pink-600">Meet the Executive Board</h3>
         </header>
-        <main className="text-neutral-900/75 flex flex-col flex-wrap gap-y-8">
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <aside className="w-full md:w-2/5">
-              <Image src="/assets/img/annual-celebration.webp" className="object-cover h-full w-full rounded-xl" alt="Delia Riley" width={450} height={400} quality={100} priority></Image>
-            </aside>
-            <main className="md:w-2/5">
-              <header>
-                <h4 className="text-2xl text-black">Delia Riley</h4>
-              </header>
-              <p className="mb-2"><b className="font-semibold">Who Am I?</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci numquam quaerat inventore praesentium id reprehenderit? Quas nostrum tenetur delectus quo tempore, adipisci, facere nobis consequatur hic reprehenderit fugit dolor.</p>
-              <p className="mb-2"><b className="font-semibold">Fun Fact:</b> Lorem ipsum dolor sit amet.</p>
-            </main>
-          </section>
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <main className="md:w-2/5">
-              <header>
-                <h4 className="text-2xl text-black">Leo Russo</h4>
-              </header>
-              <p className="mb-2"><b className="font-semibold">Who Am I?</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci numquam quaerat inventore praesentium id reprehenderit? Quas nostrum tenetur delectus quo tempore, adipisci, facere nobis consequatur hic reprehenderit fugit dolor.</p>
-              <p className="mb-2"><b className="font-semibold">Fun Fact:</b> Lorem ipsum dolor sit amet.</p>
-            </main>
-            <aside className="w-full md:w-2/5">
-              <Image src="/assets/img/annual-celebration.webp" className="object-cover h-full w-full rounded-xl" alt="Leo Russo" width={450} height={400} quality={100} priority></Image>
-            </aside>
-          </section>
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <aside className="w-full md:w-2/5">
-              <Image src="/assets/img/annual-celebration.webp" className="object-cover h-full w-full rounded-xl" alt="Lindsay Baptiste" width={450} height={400} quality={100} priority></Image>
-            </aside>
-            <main className="md:w-2/5">
-              <header>
-                <h4 className="text-2xl text-black">Lindsay Baptiste</h4>
-              </header>
-              <p className="mb-2"><b className="font-semibold">Who Am I?</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci numquam quaerat inventore praesentium id reprehenderit? Quas nostrum tenetur delectus quo tempore, adipisci, facere nobis consequatur hic reprehenderit fugit dolor.</p>
-              <p className="mb-2"><b className="font-semibold">Fun Fact:</b> Lorem ipsum dolor sit amet.</p>
-            </main>
-          </section>
-          <section className="flex flex-col flex-wrap md:flex-row md:flex-nowrap gap-x-8 justify-center">
-            <main className="md:w-2/5">
-              <header>
-                <h4 className="text-2xl text-black">Aarohi Ghorpade</h4>
-              </header>
-              <p className="mb-2"><b className="font-semibold">Who Am I?</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, adipisci numquam quaerat inventore praesentium id reprehenderit? Quas nostrum tenetur delectus quo tempore, adipisci, facere nobis consequatur hic reprehenderit fugit dolor.</p>
-              <p className="mb-2"><b className="font-semibold">Fun Fact:</b> Lorem ipsum dolor sit amet.</p>
-            </main>
-            <aside className="w-full md:w-2/5">
-              <Image src="/assets/img/annual-celebration.webp" className="object-cover h-full w-full rounded-xl" alt="Aarohi Ghorpade" width={450} height={400} quality={100} priority></Image>
-            </aside>
-          </section>
-          <footer className="text-center">
-            <p className="mb-4">We wouldn't be here without our founders and those who came before us!</p>
-            <LinkButton href="/leadership/past-leaders">Past Leadership</LinkButton>
-          </footer>
+        <main className="text-neutral-900/75 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+          <Leader name="Delia Riley" position="Queen Sister" src="delia-riley.jpg">
+            Description about Delia Riley
+          </Leader>
+          <Leader name="Leo Russo" position="Jester in STEM" src="leo-russo.jpg">
+            Description about Delia Riley
+          </Leader>
+          <Leader name="Lindsay Baptiste" position="Volunteer Queen Sister" src="laney-olson.webp">
+            Description about Delia Riley
+          </Leader>
+          <Leader name="Aarohi Ghorpade" position="Creative Sister" src="aarohi-ghorpade.jpg">
+            Description about Aarohi Ghorpade
+          </Leader>
+          {/* <Leader name="Fiona Riley" position="Unknown" src="laney-olson.webp">
+            Description about Fiona Riley
+          </Leader>
+          <Leader name="Aashni Sahai" position="Unknown" src="laney-olson.webp">
+            Description about Aashni Sahai
+          </Leader>
+          <Leader name="Rachel Parker" position="Unknown" src="laney-olson.webp">
+            Description about Rachel Parker
+          </Leader>
+          <Leader name="Claire Filipowicz" position="Unknown" src="laney-olson.webp">
+            Description about Claire Filipowicz
+          </Leader>
+          <Leader name="Niki Natt" position="Unknown" src="laney-olson.webp">
+            Description about Niki Natt
+          </Leader> */}
         </main>
+        <footer className="text-center">
+          <p className="mb-4">We wouldn&apos;t be here without our founders and those who came before us!</p>
+          <LinkButton href="/leadership/past-leaders">Past Leadership</LinkButton>
+        </footer>
       </main>
     </main>
   );

@@ -1,5 +1,5 @@
 // Component that easily allows you to add a button that leads to a link
-// Don't use for inline styling (use "@/components/inline-link.jsx" instead)
+// Don't use for inline styling (use "/components/inline-link.jsx" instead)
 import Link from "next/link";
 
 export default function LinkButton({ children, href, external }) {
