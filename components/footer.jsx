@@ -4,15 +4,15 @@ import InlineLink from "/components/inline-link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-wrap gap-y-8 min-[800px]:justify-center min-[800px]:gap-y-0 min-[800px]:gap-x-8 lg:gap-x-16 bg-pink-600 px-8 py-10 min-[800px]:py-20 shadow-black shadow-[0_8px_16px]">
-      <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
+    <footer className="flex flex-wrap gap-y-8 md:justify-center md:gap-y-0 md:gap-x-8 lg:gap-x-16 bg-pink-600 px-8 py-10 md:py-20 shadow-black shadow-[0_8px_16px]">
+      <section className="w-full md:w-max md:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">What We Do</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
           <InlineLink href="/about-us" white>About Us</InlineLink>
           <InlineLink href="/initiatives" white>Initiatives</InlineLink>
         </nav>
       </section>
-      <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
+      <section className="w-full md:w-max md:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Support</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
           <InlineLink href="/supporters" white>Supporters</InlineLink>
@@ -20,7 +20,7 @@ export default function Footer() {
           <InlineLink href="/leadership/past-leaders" white>Past Leaders</InlineLink>
         </nav>
       </section>
-      <section className="w-full min-[800px]:w-max min-[800px]:max-w-xs">
+      <section className="w-full md:w-max md:max-w-xs">
         <h2 className="font-medium text-slate-100 text-3xl">Contact</h2>
         <nav className="flex flex-col flex-wrap text-slate-100">
           <InlineLink href="/contact-us" white>Contact Us</InlineLink>
@@ -42,12 +42,12 @@ export default function Footer() {
           </InlineLink>
         </nav>
       </section>
-      <footer className="mt-6 w-full flex flex-col flex-wrap min-[800px]:flex-row min-[800px]:flex-nowrap justify-center items-center divide-y min-[800px]:divide-x min-[800px]:divide-y-0 divide-slate-100/70 text-sm text-slate-100/70">
-        <a href="https://www.sabercatrobotics.com/" target="_blank" rel="noopener noreferrer" className="min-w-[25px] px-2 min-[800px]:px-4 py-4 inline">
+      <footer className="mt-6 w-full flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center items-center divide-y md:divide-x md:divide-y-0 divide-slate-100/70 text-sm text-slate-100/70">
+        <a href="https://www.sabercatrobotics.com/" target="_blank" rel="noopener noreferrer" className="min-w-[25px] px-2 lg:px-4 py-4 inline">
           <Image src="/assets/img/head-raw-large-white.png" alt="Sabercat Robotics (FIRST team #4146) logo" width={40} height={40} quality={100}></Image>
         </a>
-        <p className="px-2 min-[800px]:px-4 py-4 inline">Copyright &copy; 2023 Sabercat Robotics FIRST Team #4146. All rights reserved.</p>
-        <a href="/privacy-policy" className="px-2 min-[800px]:px-4 py-4 inline">Privacy Policy</a>
+        <p className="px-2 lg:px-4 py-4 inline">Copyright &copy; {new Date().getFullYear()} Sabercat Robotics FIRST Team #4146. All rights reserved.</p>
+        <a href="/privacy-policy" className="px-2 lh:px-4 py-4 inline">Privacy Policy</a>
       </footer>
     </footer>
   );

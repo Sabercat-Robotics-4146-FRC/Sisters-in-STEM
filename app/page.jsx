@@ -9,20 +9,40 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "/comp
 // Questions and answers for the FAQ section of the home page
 const FAQ = [
   {
+    question: "What is Sisters in STEM?",
+    answer: <CardDescription>SiS is a multi-faceted STEM outreach program sponsored through the Scottsdale Math & Science Academy at Saguaro High School. Launched, designed and led entirely by our students, SiS provides STEM outreach activities and initiatives for young learners in grades K-12. For more information on our STEM initiatives, visit our <InlineLink href="/about-us">about us</InlineLink> page.</CardDescription>,
+  },
+  {
     question: "How can I get SiS to come to my community?",
     answer: <CardDescription>If you would like SiS to come to your community, feel free to <InlineLink href="/contact-us">contact us</InlineLink> and include information about yourself, the community you want SiS to come to, and why we should come.</CardDescription>,
   },
   {
-    question: "What is Sisters in STEM?",
-    answer: <CardDescription>SiS is a multi-faceted STEM outreach program sponsored through the Scottsdale Math & Science Academy at Saguaro High School. Launched, designed and led entirely by our students, SiS provides STEM outreach activities and initiatives for young learners in grades K-12. For more information on our STEM initiatives, visit our <InlineLink href="/about-us">about us</InlineLink> page.</CardDescription>,
+    question: "Is there an archive of past SiS experiments or events?",
+    answer: <CardDescription>Yes! We have archived all of our past experiments and events on our <InlineLink href="/archive">archive page</InlineLink>, so then you&apos;ll never miss out on anything at Sisters in STEM!</CardDescription>,
+  },
+  {
+    question: "How can I stay up-to-date with SiS?",
+    answer: <CardDescription>The best ways to stay up-to-date with SiS and what we&apos;re doing is to frequently check <InlineLink href="https://www.instagram.com/weare_sistem/" external>our Instagram</InlineLink> and our website, as we often post updates on both.</CardDescription>,
   },
 ];
-// Source's for the images shown at the bottom of the home page
+// Props for each image in the carousel at the bottom of the page
 const ImageCarousel = [
-  "stem-sisters.webp",
-  "volunteers.webp",
-  "roadshow.webp",
-  "jada-reading.webp",
+  {
+    src: "stem-sisters.webp",
+    alt: "example alt",
+  },
+  {
+    src: "volunteers.webp",
+    alt: "example alt",
+  },
+  {
+    src: "roadshow.webp",
+    alt: "example alt",
+  },
+  {
+    src: "jada-reading.webp",
+    alt: "example alt",
+  },
 ];
 export default function Home() {
  return (
@@ -117,10 +137,10 @@ export default function Home() {
             ]}>
               <CarouselContent>
                 {
-                  ImageCarousel.map(function(ImageSource) {
+                  ImageCarousel.map(function(ImageProps) {
                     return (
-                      <CarouselItem key={ImageSource} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                        <Image src={`/assets/img/${ImageSource}`} sizes="100vw" width={600} height={400} loading="eager" className="rounded-lg" />
+                      <CarouselItem key={ImageProps.src} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                        <Image src={`/assets/img/${ImageProps.src}`} alt={ImageProps.alt} sizes="100vw" width={600} height={400} loading="eager" className="rounded-lg" />
                       </CarouselItem>
                     );
                   })

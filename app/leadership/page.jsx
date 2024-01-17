@@ -10,9 +10,9 @@ export function Leader({ name, position, src, children }) {
         <CardTitle className="text-4xl">{name}</CardTitle>
         <CardDescription className="text-xl">{position}</CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center gap-x-4">
-        <Image src={`/assets/img/${src}`} className="basis-1/2 object-cover rounded-lg" alt={`Image of ${name}`} width={250} height={250} sizes="(max-width: 768px) 100vw, 40vw"></Image>
-        <p className="basis-1/2">{children}</p>
+      <CardContent className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center md:items-start gap-x-4">
+        <Image src={`/assets/img/${src}`} className="basis-1/2 object-cover rounded-lg" alt={`Image of ${name}`} width={250} height={250} sizes="(max-width: 1024px) 80vw, 40vw"></Image>
+        <p className="basis-1/2 text-start">{children}</p>
       </CardContent>
     </Card>
   );
@@ -30,10 +30,10 @@ export default function Page() {
             Description about Delia Riley
           </Leader>
           <Leader name="Leo Russo" position="Jester in STEM" src="leo-russo.jpg">
-            Description about Delia Riley
+            Description about Leo Russo
           </Leader>
           <Leader name="Lindsay Baptiste" position="Volunteer Queen Sister" src="laney-olson.webp">
-            Description about Delia Riley
+            Description about Lindsay Baptiste
           </Leader>
           <Leader name="Aarohi Ghorpade" position="Creative Sister" src="aarohi-ghorpade.jpg">
             Description about Aarohi Ghorpade

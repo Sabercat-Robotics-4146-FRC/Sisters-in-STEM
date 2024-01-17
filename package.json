@@ -2,6 +2,11 @@
   "name": "sisters-in-stem",
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    ">=0%",
+    "dead",
+    "not dead"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

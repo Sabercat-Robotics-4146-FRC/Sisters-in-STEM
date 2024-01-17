@@ -9,7 +9,12 @@ const nextConfig = {
       },
       {
         source: "/blank",
-        destination: "/sis-archive",
+        destination: "/archive/experiments",
+        permanent: true,
+      },
+      {
+        source: "/sis-archive",
+        destination: "/archive/experiments",
         permanent: true,
       },
       {
@@ -20,6 +25,11 @@ const nextConfig = {
       {
         source: "/founders-%26-past-leaders",
         destination: "/leadership/past-leaders",
+        permanent: true,
+      },
+      {
+        source: "/cybersis",
+        destination: "/initiatives/cybersis",
         permanent: true,
       },
     ];
