@@ -135,7 +135,7 @@ export default function Home() {
                   ImageCarousel.map(function(ImageProps) {
                     return (
                       <CarouselItem key={ImageProps.src} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                        <Image src={`/assets/img/${ImageProps.src}`} alt={ImageProps.alt} sizes="(min-width: 1024px) 20vw, (min-width: 768px) 30vw, (min-width: 640px) 40vw, 80vw" width={600} height={400} loading="eager" className="rounded-lg" />
+                        <Image src={`/assets/img/${ImageProps.src}`} alt={ImageProps.alt} sizes="(min-width: 1024px) 20vw, (min-width: 768px) 30vw, (min-width: 640px) 40vw, 60vw" width={600} height={400} loading="eager" className="rounded-lg" />
                       </CarouselItem>
                     );
                   })
