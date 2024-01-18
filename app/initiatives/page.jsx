@@ -27,7 +27,7 @@ export default function Page() {
       <PageHeader title="Initiatives" description="At SiS, we inspire to guide our students into the interesting world of STEM, whether they are interested in Science, Technology, Engineering, or Math." src="/assets/img/annual-celebration.webp" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
-          <h3 className="text-3xl text-pink-600">Our Initiatives</h3>
+          <h3 className="text-4xl text-pink-600">Our Initiatives</h3>
         </header>
         <main className="flex flex-col flex-wrap gap-4">
           <Initiative title="The Annual SiS STEM Celebration" src="annual-celebration.webp" alt="Boy looking through microscope to learn about biology." imgHeight={1707} imgWidth={2560}>

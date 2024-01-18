@@ -39,7 +39,7 @@ export async function SendEmail(Body) {
     if (!Verified) {
       return {
         Success: false,
-        Message: "There was an error with authenticating our email account. Please try again, or contact our email team@sabercatrobotics.com.",
+        Message: "There was an error with authenticating our email account. Please try again, or contact our email contact@sistersinstem.net.",
       };
     };
     Transport.sendMail({
@@ -70,14 +70,14 @@ export async function SendEmail(Body) {
     } else {
       return {
         Success: false,
-        Message: "There was an error on our server when sending your email. Please try again, or contact our email team@sabercatrobotics.com if you think this was a mistake.",
+        Message: "There was an error on our server when sending your email. Please try again, or contact our email contact@sistersinstem.net if you think this was a mistake.",
       };
     };
   } else {
     return {
       Success: false,
       // To-do: make this line of code cleaner or something
-      Message: !Body ? "No data was sent in the request. Please try again with valid data." : (!Body.Email || !validate(Body.Email) ? "The email that was provided was invalid. Please try again with a valid email, or contact our email team@sabercatrobotics.com if you think this was a mistake." : (!Body.Subject || !Body.Subject.replace(/\s/g, "").length ? "The subject you provided was empty. Please try again with a valid subject, or contact our email team@sabercatrobotics.com if you think this was a mistake." : (!Body.Message || !Body.Message.replace(/\s/g, "").length ? "The message you provided was empty. Please try again with a valid message, or contact our email team@sabercatrobotics.com if you think this was a mistake." : "An unknown error occured on the server. Please try again with a valid subject, or contact our email team@sabercatrobotics.com if you think this was a mistake."))),
+      Message: !Body ? "No data was sent in the request. Please try again with valid data." : (!Body.Email || !validate(Body.Email) ? "The email that was provided was invalid. Please try again with a valid email, or contact our email contact@sistersinstem.net if you think this was a mistake." : (!Body.Subject || !Body.Subject.replace(/\s/g, "").length ? "The subject you provided was empty. Please try again with a valid subject, or contact our email contact@sistersinstem.net if you think this was a mistake." : (!Body.Message || !Body.Message.replace(/\s/g, "").length ? "The message you provided was empty. Please try again with a valid message, or contact our email contact@sistersinstem.net if you think this was a mistake." : "An unknown error occured on the server. Please try again with a valid subject, or contact our email contact@sistersinstem.net if you think this was a mistake."))),
     };
   };
 };

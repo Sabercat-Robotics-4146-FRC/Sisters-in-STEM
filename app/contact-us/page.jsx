@@ -3,6 +3,7 @@ import Link from "next/link";
 import { createRef, useState } from "react";
 import { validate } from "email-validator";
 import PageHeader from "/components/page-header";
+import { SendEmail } from "/server/email";
 
 export default function Page() {
   const ResponseRef = createRef();
@@ -32,23 +33,23 @@ export default function Page() {
               } else {
                 SetInfoClasses("text-red-500");
               };
-              ResponseText.innerText = EmailResponse.Message || (!EmailResponse.Success ? "There was an error on our server when sending your email. Please try again, or contact our email team@sabercatrobotics.com if you think this was a mistake." : "Thank you for your email!");  
+              ResponseText.innerText = EmailResponse.Message || (!EmailResponse.Success ? "There was an error on our server when sending your email. Please try again, or contact our email contact@sistersinstem.net if you think this was a mistake." : "Thank you for your email!");  
             } catch(Err) {
               console.warn(Err);
               SetInfoClasses("text-red-500");
-              ResponseText.innerText = "There was an error on our server when sending your email. Please try again, or contact our email team@sabercatrobotics.com if you think this was a mistake.";    
+              ResponseText.innerText = "There was an error on our server when sending your email. Please try again, or contact our email contact@sistersinstem.net if you think this was a mistake.";    
             };
           } else {
             SetInfoClasses("text-red-500");
-            ResponseText.innerText = "The message you provided was empty. Please try again with a valid message, or contact our email team@sabercatrobotics.com if you think this was a mistake.";  
+            ResponseText.innerText = "The message you provided was empty. Please try again with a valid message, or contact our email contact@sistersinstem.net if you think this was a mistake.";  
           };
         } else {
           SetInfoClasses("text-red-500");
-          ResponseText.innerText = "The subject you provided was empty. Please try again with a valid subject, or contact our email team@sabercatrobotics.com if you think this was a mistake.";  
+          ResponseText.innerText = "The subject you provided was empty. Please try again with a valid subject, or contact our email contact@sistersinstem.net if you think this was a mistake.";  
         };
       } else {
         SetInfoClasses("text-red-500");
-        ResponseText.innerText = "The email that was provided was invalid. Please try again with a valid email, or contact our email team@sabercatrobotics.com if you think this was a mistake.";
+        ResponseText.innerText = "The email that was provided was invalid. Please try again with a valid email, or contact our email contact@sistersinstem.net if you think this was a mistake.";
       };
     };
   };
