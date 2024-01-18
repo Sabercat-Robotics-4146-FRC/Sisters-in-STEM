@@ -36,7 +36,7 @@ export default function Page() {
           <Section left title="Who We Are" src="about-us.webp" alt="SiS volunteer amazing young girl with STEM experiment." imgHeight={1620} imgWidth={1080}>
             <p>We are students at Saguaro High with a passion for STEM - and we want to share that love of the sciences with everyone in our community! Supported by our MSA leadership team, SUSD leaders, and mentors throughout the STEM professional community, we design, create, and run a broad array of STEM oriented events and initiatives within SUSD and for the broader Phoenix community.</p>
           </Section>
-          <Section title="What We Do" src="syringe-stem-experiment.webp" alt="Sisters in STEM robot" imgHeight={2560} imgWidth={1707}>
+          <Section title="What We Do" src="syringe-stem-experiment.webp" alt="2 young girls using synringes in a STEM experiment at SiS event" imgHeight={2560} imgWidth={1707}>
             <p>Every year, we host the Annual STEM Celebration here at Saguaro High School. We will often also go to other communities to teach them about STEM through our SiS Roadshow. Occasionally, SiS will teach students cybersafety by reading &quot;Jada Saves the Day,&quot; a book written by one of our very own students. If you&apos;re interested in learning more about what we do, you can find more details about our initiatives on the <InlineLink href="/initiatives">initiatives</InlineLink> page.</p>
           </Section>
           <Section left title="Why We Do It" src="girl-microscope.webp" alt="Young girl looking through microscope during an experiment at a SiS event" imgHeight={2560} imgWidth={1696}>
