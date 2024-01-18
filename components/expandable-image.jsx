@@ -36,7 +36,7 @@ export function ExpandImage(Event, [Loading, SetLoadingState]) {
               <span class="sr-only">Loading...</span>
             </div> : ""
           }
-          <img srcSet={ButtonImage.srcset} src={ButtonImage.src} sizes="90vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} className="h-[75vw] sm:h-[50vw] max-h-[90%] w-auto" onLoad={function(Event) {
+          <img srcSet={ButtonImage.srcset} src={ButtonImage.src} sizes="(min-width: 640px) 50vw, 75vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} className="h-[75vw] sm:h-[50vw] max-h-[90%] w-auto" onLoad={function(Event) {
             SetLoadingState(!Event.currentTarget.complete);
           }} />
           <p className="text-white text-xl text-center w-3/4 sm:w-1/2">{ButtonImage.alt}</p>

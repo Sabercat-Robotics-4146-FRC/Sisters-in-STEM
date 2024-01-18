@@ -10,7 +10,7 @@ function Initiative({ title, src, alt, imgHeight, imgWidth, left, children }) {
       </aside> : ""}
       <main className="text-neutral-900/75 basis-1/2">
         <header className="mb-2 text-center">
-          <h3 className="text-3xl text-pink-600">{title}</h3>
+          <h4 className="text-3xl text-pink-600">{title}</h4>
         </header>
         {children}
       </main>

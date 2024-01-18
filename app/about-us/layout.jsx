@@ -1,6 +1,6 @@
 const url = "https://www.sistersinstem.net";
-const title = "Contact Us";
-const description = "If you ever have any inquries, feel free to reach out to us! We typically respond in 3 - 5 business days.";
+const title = "About Us";
+const description = "Learn more about Sisters in STEM, a nonprofit organization that helps students' interest for STEM grow.";
 const locale = "en";
 export const metadata = {
   metadataBase: new URL(url),
@@ -37,12 +37,12 @@ export const metadata = {
     creatorId: "1067297456",
   },
   alternates: {
-    canonical: "/contact-us",
+    canonical: "/about-us",
     languages: {
-      "en": "/contact-us",
-      // "es": "/es/contact-us",
-      // "fr": "/fr/contact-us",
-      // "ja": "/ja/contact-us",
+      "en": "/about-us",
+      // "es": "/es/about-us",
+      // "fr": "/fr/about-us",
+      // "ja": "/ja/about-us",
     },
   },
 };

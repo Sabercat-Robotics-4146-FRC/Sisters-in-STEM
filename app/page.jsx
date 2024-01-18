@@ -1,9 +1,8 @@
-"use client";
 import InlineLink from "/components/inline-link";
 import LinkButton from "/components/link-button";
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import AutoplayCarousel from "/components/autoplay-carousel";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "/components/ui/card";
 
 // Questions and answers for the FAQ section of the home page
@@ -130,11 +129,7 @@ export default function Home() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis facilis asperiores commodi eligendi natus, libero nostrum praesentium saepe doloribus, nisi minima fuga voluptates vitae tempora perferendis incidunt nihil aspernatur fugiat.</p>
           </header>
           <main className="px-16">
-            <Carousel plugins={[
-              Autoplay({
-                delay: 5000,
-              }),
-            ]}>
+            <AutoplayCarousel delay={5000}>
               <CarouselContent>
                 {
                   ImageCarousel.map(function(ImageProps) {
@@ -148,7 +143,7 @@ export default function Home() {
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />
-            </Carousel>
+            </AutoplayCarousel>
           </main>
         </section>
       </main>
