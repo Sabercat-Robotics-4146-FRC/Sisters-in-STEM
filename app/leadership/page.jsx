@@ -26,16 +26,16 @@ export default function Page() {
           <h3 className="text-3xl text-pink-600">Meet the Executive Board</h3>
         </header>
         <main className="text-neutral-900/75 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <Leader name="Delia Riley" position="Queen Sister" src="delia-riley.jpg">
+          <Leader name="Delia Riley" position="Queen Sister" src="delia-riley.JPG">
             Description about Delia Riley
           </Leader>
-          <Leader name="Leo Russo" position="Jester in STEM" src="leo-russo.jpg">
+          <Leader name="Leo Russo" position="Jester in STEM" src="leo-russo.JPG">
             Description about Leo Russo
           </Leader>
           <Leader name="Lindsay Baptiste" position="Volunteer Queen Sister" src="laney-olson.webp">
             Description about Lindsay Baptiste
           </Leader>
-          <Leader name="Aarohi Ghorpade" position="Creative Sister" src="aarohi-ghorpade.jpg">
+          <Leader name="Aarohi Ghorpade" position="Creative Sister" src="aarohi-ghorpade.JPG">
             Description about Aarohi Ghorpade
           </Leader>
           {/* <Leader name="Fiona Riley" position="Unknown" src="laney-olson.webp">
