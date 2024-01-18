@@ -44,9 +44,9 @@ export default function Footer() {
       </section>
       <footer className="mt-6 w-full flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center items-center divide-y md:divide-x md:divide-y-0 divide-slate-100/70 text-sm text-slate-100/70">
         <a href="https://www.sabercatrobotics.com/" target="_blank" rel="noopener noreferrer" className="min-w-[25px] px-2 lg:px-4 py-4 inline">
-          <Image src="/assets/img/head-raw-large-white.png" alt="Sabercat Robotics (FIRST team #4146) logo" width={40} height={40} quality={100}></Image>
+          <Image src="/assets/img/smsa.png" alt="Saguaro Math and Science Academy logo" width={40} height={40} quality={100}></Image>
         </a>
-        <p className="px-2 lg:px-4 py-4 inline">Copyright &copy; {new Date().getFullYear()} Sabercat Robotics FIRST Team #4146. All rights reserved.</p>
+        <p className="px-2 lg:px-4 py-4 inline">Copyright &copy; {new Date().getFullYear()} Scottsdale Math And Science Academy. All rights reserved.</p>
         <a href="/privacy-policy" className="px-2 lh:px-4 py-4 inline">Privacy Policy</a>
       </footer>
     </footer>
