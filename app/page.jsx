@@ -21,7 +21,7 @@ const FAQ = [
   },
   {
     question: "How can I stay up-to-date with SiS?",
-    answer: <CardDescription>The best ways to stay up-to-date with SiS and what we&apos;re doing is to frequently check <InlineLink href="https://www.instagram.com/weare_sistem/" external>our Instagram</InlineLink> and our website, as we often post updates on both.</CardDescription>,
+    answer: <CardDescription>The best ways to stay up-to-date with SiS and what we&apos;re doing is to frequently check <InlineLink href="https://www.instagram.com/shs_sistersinstem/" external>our Instagram</InlineLink> and our website, as we often post updates on both.</CardDescription>,
   },
 ];
 // Props for each image in the carousel at the bottom of the page
