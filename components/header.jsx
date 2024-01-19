@@ -5,6 +5,17 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { createRef, useEffect } from "react";
 
+function MobileLink({ href, path, children }) {
+  return (
+    <Link href={href} className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:[transition:transform_300ms_0ms,transform-origin_0ms_300ms] ${path === href ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>{children}</Link>
+  );
+};
+function DesktopLink({ href, path, children }) {
+  return (
+    <Link href={href} className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:[transition:transform_300ms_0ms,transform-origin_0ms_300ms] ${path === href ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>{children}</Link>
+  );
+};
+
 export default function Header() {
   const Path = usePathname();
 
@@ -49,12 +60,12 @@ export default function Header() {
           <path d="M448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" className="origin-left transition-transform duration-500 ease-in-out"></path>
         </svg>
         <nav ref={MobileNav} className="-translate-x-full transition-transform duration-500 ease-in-out inset-0 fixed w-screen h-screen bg-pink-600 -z-50 flex flex-col flex-wrap justify-center items-center gap-y-8 text-2xl text-white">
-          <Link href="/" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Home</Link>
-          <Link href="/initiatives" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/initiatives" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Initiatives</Link>
-          <Link href="/leadership" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/leadership" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Leadership</Link>
-          <Link href="/supporters" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/supporters" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Supporters</Link>
-          <Link href="/contact-us" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/contact-us" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Contact Us</Link>
-          <Link href="/about-us" className={`relative transition-[font-weight] duration-300 after:absolute after:bg-white after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/about-us" ? "font-semibold after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:after:scale-x-100 hover:after:origin-right focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>About Us</Link>
+          <MobileLink href="/" path={Path}>Home</MobileLink>
+          <MobileLink href="/initiatives" path={Path}>Initiatives</MobileLink>
+          <MobileLink href="/leadership" path={Path}>Leadership</MobileLink>
+          <MobileLink href="/supporters" path={Path}>Supporters</MobileLink>
+          <MobileLink href="/contact-us" path={Path}>Contact Us</MobileLink>
+          <MobileLink href="/about-us" path={Path}>About Us</MobileLink>
         </nav>
       </button>
       <Link className="w-max flex flex-nowrap justify-center items-center" href="/">
@@ -62,12 +73,12 @@ export default function Header() {
         <h1 ref={Heading} className="hidden min-[400px]:block text-pink-600 text-4xl transition-colors duration-500 ease-in-out">Sisters in STEM</h1>
       </Link>
       <nav className="hidden w-full md:flex flex-nowrap justify-center items-center gap-x-8 tracking-wide">
-        <Link href="/" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Home</Link>
-        <Link href="/initiatives" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/initiatives" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Initiatives</Link>
-        <Link href="/leadership" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/leadership" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Leadership</Link>
-        <Link href="/supporters" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/supporters" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Supporters</Link>
-        <Link href="/contact-us" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/contact-us" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>Contact Us</Link>
-        <Link href="/about-us" className={`relative transition-[color,font-weight] duration-300 after:absolute after:bg-pink-600 after:w-full after:h-[2px] after:left-0 after:bottom-0 after:origin-left after:transition-[transform,transform-origin] after:duration-[300ms,0ms] after:delay-[0ms,300ms] ${Path === "/about-us" ? "font-semibold text-pink-600 after:scale-x-100 after:origin-right" : "after:scale-x-0"} hover:text-pink-600 hover:after:scale-x-100 hover:after:origin-right focus-visible:text-pink-600 focus-visible:after:scale-x-100 focus-visible:after:origin-right`}>About Us</Link>
+        <DesktopLink href="/" path={Path}>Home</DesktopLink>
+        <DesktopLink href="/initiatives" path={Path}>Initiatives</DesktopLink>
+        <DesktopLink href="/leadership" path={Path}>Leadership</DesktopLink>
+        <DesktopLink href="/supporters" path={Path}>Supporters</DesktopLink>
+        <DesktopLink href="/contact-us" path={Path}>Contact Us</DesktopLink>
+        <DesktopLink href="/about-us" path={Path}>About Us</DesktopLink>
       </nav>
     </header>
   );

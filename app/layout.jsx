@@ -1,10 +1,7 @@
 import "/css/globals.css";
-import Header from "/components/header";
-import ClientCookiesProvider from "/components/cookie-provider"
-import CookieConsent from "/components/cookie-consent";
-import Footer from "/components/footer";
-import Script from "next/script";
 import { Fredoka, Poppins } from "next/font/google";
+import Header from "/components/header";
+import Footer from "/components/footer";
 
 const url = "https://www.sistersinstem.net";
 const title = "Sisters in STEM";
@@ -190,24 +187,6 @@ export default function RootLayout({children}) {
       <body className="text-lg leading-7 text-neutral-900">
         <Header />
         {children}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ZS97296VCZ" />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            };
-            gtag("consent", "default", {
-              "ad_storage": "denied",
-              "analytics_storage": "denied",
-            });
-            gtag("js", new Date());
-            gtag("config", "G-ZS97296VCZ");
-          `}
-        </Script>
-        <ClientCookiesProvider>
-          <CookieConsent />
-        </ClientCookiesProvider>
         <Footer />
       </body>
     </html>
