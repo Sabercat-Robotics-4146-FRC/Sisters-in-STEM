@@ -18,7 +18,7 @@ export default function Page() {
             <header className="mb-2">
               <h4 className="text-3xl text-pink-600">SiS Experiment Archive</h4>
             </header>
-            <p>The SiS Experiment Archive is perfect for those who can't make it to SiS events yet still want to have fun with STEM. <InlineLink href="/archive/experiments">Click here</InlineLink> to find all of the fun experiments we've had in the past!</p>
+            <p>The SiS Experiment Archive is perfect for those who can&apos;t make it to SiS events yet still want to have fun with STEM. <InlineLink href="/archive/experiments">Click here</InlineLink> to find all of the fun experiments we&apos;ve had in the past!</p>
           </section>
           <section className="space-y-2">
             <header className="mb-2">
