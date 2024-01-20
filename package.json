@@ -28,6 +28,7 @@
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
+    "@types/node": "20.11.5",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",

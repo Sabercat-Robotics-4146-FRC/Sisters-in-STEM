@@ -25,7 +25,7 @@ const FAQ = [
   },
 ];
 // Props for each image in the carousel at the bottom of the page
-const ImageCarousel = [
+export const ImageCarousel = [
   {
     src: "stem-sisters.webp",
     alt: "example alt",

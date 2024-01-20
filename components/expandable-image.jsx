@@ -1,18 +1,17 @@
 "use client";
 import Image from "next/image";
-import { createRef, useState } from "react";
+import { createRef } from "react";
 import { createRoot } from "react-dom/client";
 import { cn } from "/lib/utils";
 
 export function ExpandImage(Event, Source) {
-  let Loading = true;
   if (Event?.currentTarget) {
     const Button = Event.currentTarget;
     const ImageRef = createRef();  
     if (Button.childElementCount === 1) {
       const ButtonImage = Button.children[0];
       const Expanded = document.createElement("div");
-      Expanded.className = "z-50 fixed top-0 w-full h-full bg-black/75 flex flex-col flex-wrap justify-center items-center transition-opacity duration-300 opacity-0";
+      Expanded.className = "z-50 fixed top-0 w-full h-full bg-black/30 flex flex-col flex-wrap justify-center items-center transition-opacity duration-300 opacity-0";
       const ExpandedRoot = createRoot(Expanded);
       ExpandedRoot.render(
         <>
@@ -35,9 +34,7 @@ export function ExpandImage(Event, Source) {
               <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
             </svg>
           </div>
-          <Image aria-hidden="true" ref={ImageRef} src={Source} sizes="(min-width: 640px) 50vw, 75vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} quality={100} className="h-[75vw] sm:h-[50vw] max-h-[90%] object-contain mb-2 w-auto hidden" loading="eager" onLoad={function(Event) {
-            Loading = !Event.currentTarget.complete;
-          }} />
+          <Image aria-hidden="true" ref={ImageRef} src={Source} sizes="(min-width: 640px) 50vw, 75vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} quality={100} className="h-[75vw] sm:h-[50vw] max-h-[90%] object-contain mb-2 w-auto hidden" loading="eager" />
           <p className="text-white text-xl text-center w-3/4 sm:w-1/2">Loading...</p>
         </>
       );
@@ -45,7 +42,7 @@ export function ExpandImage(Event, Source) {
       setTimeout(async function() {
         Expanded.classList.add("opacity-100");
         Expanded.classList.remove("opacity-0");
-
+        
         await new Promise(function(Resolve) {
           const Loop = function() {
             if (ImageRef && ImageRef.current) {
@@ -80,12 +77,10 @@ export function ExpandImage(Event, Source) {
                 </svg>
                 <span className="sr-only">Close</span>
               </button>
-              <Image ref={ImageRef} src={Source} sizes="(min-width: 640px) 50vw, 75vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} quality={100} className="h-[75vw] sm:h-[50vw] max-h-[90%] object-contain mb-2 w-auto" loading="eager" onLoad={function(Event) {
-                Loading = !Event.currentTarget.complete;
-              }} />
+              <Image ref={ImageRef} src={Source} sizes="(min-width: 640px) 50vw, 75vw" alt={ButtonImage.alt} width={ButtonImage.width} height={ButtonImage.height} quality={100} className="h-[75vw] sm:h-[50vw] max-h-[90%] object-contain mb-2 w-auto" />
               <p className="text-white text-xl text-center w-3/4 sm:w-1/2">{ButtonImage.alt}</p>
             </>
-          );  
+          );
         } catch(Err) {
           console.warn(Err);
           ExpandedRoot.render(
@@ -113,7 +108,6 @@ export function ExpandImage(Event, Source) {
 };
 
 export default function ExpandableImage({ src, alt, width, height, sizes, className, buttonClassName }) {
-  const [Loading, SetLoadingState] = useState(true);
   return (
     <button onClick={function(Event) {
       ExpandImage(Event, src);
