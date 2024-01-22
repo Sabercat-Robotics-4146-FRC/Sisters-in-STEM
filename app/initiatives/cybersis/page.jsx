@@ -4,7 +4,7 @@ import ExpandableImage from "/components/expandable-image";
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="CyberSiS" description="Our CyberSiS program, helping the people of the future stay safe online." src="/assets/img/cybersis.webp" />
+      <PageHeader title="CyberSis" />
       <main className="px-6 min-[480px]:px-12">
         <main className="flex flex-col flex-wrap gap-2">
           <header>

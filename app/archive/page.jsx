@@ -8,7 +8,7 @@ import { ImageCarousel } from "../page";
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="The SiS Archive" description="Want more STEM fun? Check out our past events and perform our fun experiments on the SiS Archive!" src="/assets/img/girl-microscope.webp" />
+      <PageHeader title="The SiS Archive" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
           <h3 className="text-4xl text-pink-600">Archives</h3>

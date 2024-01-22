@@ -61,11 +61,11 @@ export default function Header() {
         </svg>
         <nav ref={MobileNav} className="-translate-x-full transition-transform duration-500 ease-in-out inset-0 fixed w-screen h-screen bg-pink-600 -z-50 flex flex-col flex-wrap justify-center items-center gap-y-8 text-2xl text-white">
           <MobileLink href="/" path={Path}>Home</MobileLink>
+          <MobileLink href="/about-us" path={Path}>About Us</MobileLink>
           <MobileLink href="/initiatives" path={Path}>Initiatives</MobileLink>
           <MobileLink href="/leadership" path={Path}>Leadership</MobileLink>
           <MobileLink href="/supporters" path={Path}>Supporters</MobileLink>
           <MobileLink href="/contact-us" path={Path}>Contact Us</MobileLink>
-          <MobileLink href="/about-us" path={Path}>About Us</MobileLink>
         </nav>
       </button>
       <Link className="w-max flex flex-nowrap justify-center items-center" href="/">
@@ -74,11 +74,11 @@ export default function Header() {
       </Link>
       <nav className="hidden w-full md:flex flex-nowrap justify-center items-center gap-x-8 tracking-wide">
         <DesktopLink href="/" path={Path}>Home</DesktopLink>
+        <DesktopLink href="/about-us" path={Path}>About Us</DesktopLink>
         <DesktopLink href="/initiatives" path={Path}>Initiatives</DesktopLink>
         <DesktopLink href="/leadership" path={Path}>Leadership</DesktopLink>
         <DesktopLink href="/supporters" path={Path}>Supporters</DesktopLink>
         <DesktopLink href="/contact-us" path={Path}>Contact Us</DesktopLink>
-        <DesktopLink href="/about-us" path={Path}>About Us</DesktopLink>
       </nav>
     </header>
   );

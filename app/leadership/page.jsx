@@ -20,22 +20,22 @@ export function Leader({ name, position, src, children }) {
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="Leadership" description="The people who lead and help innovate Sisters in STEM. Without them, we wouldn't be where we currently are today." src="/assets/img/15.jpg" />
+      <PageHeader title="Leadership" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
           <h3 className="text-3xl text-pink-600">Meet the Executive Board</h3>
         </header>
         <main className="text-neutral-900/75 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
-          <Leader name="Delia Riley" position="Queen Sister" src="delia-riley.JPG">
+          <Leader name="Delia Riley" position="President of Operations" src="delia-riley.JPG">
             Description about Delia Riley
           </Leader>
-          <Leader name="Leo Russo" position="Jester in STEM" src="leo-russo.JPG">
+          <Leader name="Leo Russo" position="Vice President of Operations" src="leo-russo.JPG">
             Description about Leo Russo
           </Leader>
-          <Leader name="Lindsay Baptiste" position="Volunteer Queen Sister" src="laney-olson.webp">
+          <Leader name="Lindsay Baptiste" position="Volunteer Coordinator" src="laney-olson.webp">
             Description about Lindsay Baptiste
           </Leader>
-          <Leader name="Aarohi Ghorpade" position="Creative Sister" src="aarohi-ghorpade.JPG">
+          <Leader name="Aarohi Ghorpade" position="Creative Director" src="aarohi-ghorpade.JPG">
             Description about Aarohi Ghorpade
           </Leader>
           {/* <Leader name="Fiona Riley" position="Unknown" src="laney-olson.webp">

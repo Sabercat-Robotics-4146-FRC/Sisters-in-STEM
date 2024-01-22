@@ -24,7 +24,7 @@ function Section({ title, src, alt, imgHeight, imgWidth, left, children }) {
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="About Us" description="Learn more about Sisters in STEM, a nonprofit organization that helps students' interest for STEM grow." src="/assets/img/about-us.webp" />
+      <PageHeader title="About Us" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
           <h3 className="text-4xl text-pink-600">About Us</h3>

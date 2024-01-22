@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 lg:px-12 py-3 min-[320px]:py-6 lg:py-12">
-      <PageHeader title="Past Leaders" description="We wouldn't be here without our founders and those who came before us!" src="/assets/img/15.jpg" />
+      <PageHeader title="Past Leaders" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
           <h3 className="text-3xl text-pink-600">Meet the Founders</h3>

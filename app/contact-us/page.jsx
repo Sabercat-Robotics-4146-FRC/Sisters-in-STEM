@@ -4,6 +4,7 @@ import { createRef, useState } from "react";
 import { validate } from "email-validator";
 import PageHeader from "/components/page-header";
 import { SendEmail } from "/server/email";
+import InlineLink from "/components/inline-link";
 
 export default function Page() {
   const ResponseRef = createRef();
@@ -56,27 +57,11 @@ export default function Page() {
   
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="Contact Us" description="If you ever have any inquries, feel free to reach out to us! We typically respond in 3 - 5 business days." src="/assets/img/15.jpg" />
+      <PageHeader title="Contact Us" />
       <main className="px-6 min-[480px]:px-12">
-        <header className="text-neutral-900 mb-4">
-          <h2 className="text-3xl">Methods of Contact</h2>
-          <p>Depending on who you want to contact, there are different ways to go about it. We&apos;ll show you each way you can go about it, so then we both can have a pleasant conversation and experience.</p>
-        </header>
-        <section className="text-neutral-900/80 mb-4">
-          <header className="text-neutral-900">
-            <h2 className="text-3xl">Contacting the Team</h2>
-          </header>
-          <p>We have done our best to make contacting our team as easy as possible. That&apos;s why we created a contact form that can be filled out within a minute. Simply go to the bottom of the page, fill out each field, and click the &quot;Submit&quot; button.</p>
-        </section>
-        <section className="text-neutral-900/80 mb-4">
-          <header className="text-neutral-900">
-            <h2 className="text-3xl">Contacting a Specific Person</h2>
-          </header>
-          <p className="mb-2">If you&apos;d like to contact a leader of SiS about anything, you can find their emails on our <Link href="/leadership" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">leadership</Link> page. Unfortuanetly, we do not currently have a page with a directory of volunteers. However, you may be able to find some volunteers on the <a target="_blank" rel="noopener noreferrer" href="https://www.sabercatrobotics.com/contact-information" className="transition-colors duration-300 text-pink-600 hover:text-pink-700 focus-visible:text-pink-700">contact information</a> page on Sabercat Robotics&apos; website.</p>
-        </section>
         <main className="flex flex-col flex-wrap justify-center items-center text-center">
           <header className="w-full sm:w-1/2 px-4 mb-4">
-            <h2 className="mb-4 font-medium text-3xl text-neutral-900">Contact Us</h2>
+            <h2 className="mb-4 font-medium text-3xl text-pink-600">Contact Us</h2>
           </header>
           <main className="w-full lg:w-1/2">
             <section className="mb-4 relative flex flex-wrap items-strech w-full border-2 transition-[border-color] duration-300 focus-within:border-pink-600">
@@ -113,6 +98,9 @@ export default function Page() {
               <button className="z-[1] w-full transition-colors duration-500 text-pink-600 overflow-clip border-2 px-6 py-3 leading-none border-pink-600 font-medium relative before:absolute before:h-full before:w-full before:-z-[1] before:scale-x-0 before:inset-0 before:bg-pink-600 before:origin-left before:[transition:transform_500ms_0ms,transform-origin_0ms_500ms] hover:before:scale-x-100 hover:before:origin-right focus-visible:before:scale-x-100 focus-visible:before:origin-right hover:text-slate-100 focus-visible:text-slate-100 mb-2" onClick={HandleEmailEvent}>Submit</button>
               <p ref={ResponseRef} className={`w-full ${InfoClasses} mt-2 leading-none`} id="Response"></p>
             </section>
+            <footer>
+              <p>...or contact our email, <InlineLink external href="mailto:contact@sistersinstem.net">contact@sistersinstem.net</InlineLink>!</p>
+            </footer>
           </main>
         </main>
       </main>

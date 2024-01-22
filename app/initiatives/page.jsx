@@ -24,11 +24,8 @@ function Initiative({ title, src, alt, imgHeight, imgWidth, left, children }) {
 export default function Page() {
   return (
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
-      <PageHeader title="Initiatives" description="At SiS, we inspire to guide our students into the interesting world of STEM, whether they are interested in Science, Technology, Engineering, or Math." src="/assets/img/annual-celebration.webp" />
+      <PageHeader title="Initiatives" />
       <main className="px-6 min-[480px]:px-12">
-        <header className="mb-4">
-          <h3 className="text-4xl text-pink-600">Our Initiatives</h3>
-        </header>
         <main className="flex flex-col flex-wrap gap-4">
           <Initiative title="The Annual SiS STEM Celebration" src="annual-celebration.webp" alt="Boy looking through microscope to learn about biology." imgHeight={1707} imgWidth={2560}>
             <p>Every year, SiS and the Scottsdale Math & Science Academy welcome students ages 5-15 to Saguaro High School to spend an afternoon exploring the wonderful world of STEM. We offer live, hands-on experiments in all areas of STEM, no matter if your student is a geology genius, a physics fiend - or has no experience, but lots of questions about STEM! Along with our industry and academic partners, we invite students of all ages and walks of life to see, try, and experiment with the amazing world of STEM; to show them the infinite possibilities and fun in the fields of science.</p>
