@@ -32,6 +32,26 @@ const nextConfig = {
         destination: "/initiatives/cybersis",
         permanent: true,
       },
+      {
+        source: "/our-initiatives",
+        destination: "/initiatives",
+        permanent: true,
+      },
+      {
+        source: "/our-leadership",
+        destination: "/leadership",
+        permanent: true,
+      },
+      {
+        source: "/our-founders",
+        destination: "/leadership/past-leaders",
+        permanent: true,
+      },
+      {
+        source: "/our-support",
+        destination: "/supporters",
+        permanent: true,
+      },
     ];
   },
 };

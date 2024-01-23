@@ -36,7 +36,7 @@ export default function Page() {
         </section>
         <section className="text-neutral-900/75">
           <header className="mb-4">
-            <h4 className="text-3xl text-pink-600">Donors & Mentors</h4>
+            <h4 className="text-3xxl text-pink-600">Donors & Mentors</h4>
           </header>
           <main className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-4">
             <Supporter donator="Sabercat Robotics FIRST Team #4146" src="head-raw-large.png" imgAlt="Sabercat Robotics logo" imgWidth={4620} imgHeight={3570} website="https://www.sabercatrobotics.com/" />
