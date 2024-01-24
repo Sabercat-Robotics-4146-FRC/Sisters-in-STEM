@@ -1,7 +1,7 @@
 import PageHeader from "/components/page-header";
 import ExpandableImage from "/components/expandable-image";
 import InlineLink from "/components/inline-link";
-import { Card, CardContent } from "/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "/components/ui/card";
 
 function Supporter({ donator, src, imgAlt, imgWidth, imgHeight, website }) {
   return (
@@ -13,6 +13,15 @@ function Supporter({ donator, src, imgAlt, imgWidth, imgHeight, website }) {
           {website ? <InlineLink external href={website}>Visit their website</InlineLink> : ""}
         </main>
       </CardContent>
+    </Card>
+  );
+};
+function Mentor({ mentor }) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{mentor}</CardTitle>
+      </CardHeader>
     </Card>
   );
 };
@@ -34,9 +43,9 @@ export default function Page() {
             <ExpandableImage sizes="100vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
           </main>
         </section>
-        <section className="text-neutral-900/75">
+        <section className="text-neutral-900/75 mb-4">
           <header className="mb-4">
-            <h4 className="text-3xxl text-pink-600">Donors & Mentors</h4>
+            <h4 className="text-3xl text-pink-600">Donors</h4>
           </header>
           <main className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-4">
             <Supporter donator="Sabercat Robotics FIRST Team #4146" src="head-raw-large.png" imgAlt="Sabercat Robotics logo" imgWidth={4620} imgHeight={3570} website="https://www.sabercatrobotics.com/" />
@@ -47,6 +56,15 @@ export default function Page() {
             <Supporter donator="SUSD Foundation" src="susd-foundation.png" imgAlt="SUSD Foundation logo" imgWidth={4620} imgHeight={3570} website="https://susdfoundation.org/" />
             <Supporter donator="Northrop Grumman" src="northrop-grumman.png" imgAlt="Northrop Grumman logo" imgWidth={4620} imgHeight={3570} website="https://www.northropgrumman.com/" />
             <Supporter donator="ASU Luminosity Lab" src="asu-luminosity-lab.jpg" imgAlt="ASU Luminosity Lab logo" imgWidth={1080} imgHeight={248} website="https://theluminositylab.com/" />
+          </main>
+        </section>
+        <section className="text-neutral-900/75">
+          <header className="mb-4">
+            <h4 className="text-3xl text-pink-600">Mentors</h4>
+          </header>
+          <main className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-4">
+            <Mentor mentor="Sreyoshi Bahdrui" />
+            <Mentor mentor="Frank Lilo" />
           </main>
         </section>
       </main>
