@@ -27,16 +27,22 @@ export default function Page() {
         </header>
         <main className="text-neutral-900/75 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
           <Leader name="Delia Riley" position="President of Operations" src="delia-riley.JPG">
-            Description about Delia Riley
+            <b>Graduation Year:</b> 2024<br />
+            <b>Time in Sabercat Robotics:</b> Delia was on VEX and FRC teams, junior and senior year, respectively. She was mechanical during her time in VEX, also maintaining the engineering notebook. Her senior year, she was on the business team. She was on the Sisters in STEM executive board through all of high school.<br />
+            <b>High School Accomplishments:</b> Delia was president of the Scottsdale Math & Science Academy and very involved with every aspect of the academy. She competed with CyberPatriot and loved AP Chemistry & Biology. She was also in the marching band, as Guard Captain.<br />
           </Leader>
           <Leader name="Leo Russo" position="Vice President of Operations" src="leo-russo.JPG">
-            Description about Leo Russo
+            <b>Graduation Year:</b> 2024<br />
+            <b>Time in Sabercat Robotics:</b> Joining his Junior year,  Leo has been a part of both the FRC and VEX teams. Leo joined the business team and earned a leadership title in outreach. He focused on writing essays for FRC awards and grants, along with designing social media for the team.<br />
+            <b>High School Accomplishments:</b> Leo participated in many academic clubs, including the Math and Science Academy, the National Honors Society, and CyberPatriot. He was heavily focused on academics, while integrating his creativity into his endeavors. After completing Graphic Design courses, he noticed a need for design throughout his school. He received his certification in Graphic Design which allowed him to design logos and posters for the school.
           </Leader>
           <Leader name="Lindsay Baptiste" position="Volunteer Coordinator" src="laney-olson.webp">
-            Description about Lindsay Baptiste
+            <b>Graduation Year:</b> 2024 
+            <b>High School Accomplishments:</b> TBD
           </Leader>
           <Leader name="Aarohi Ghorpade" position="Creative Director" src="aarohi-ghorpade.JPG">
-            Description about Aarohi Ghorpade
+            <b>Graduation Year:</b> 2024 
+            <b>High School Accomplishments:</b> TBD
           </Leader>
           {/* <Leader name="Fiona Riley" position="Unknown" src="laney-olson.webp">
             Description about Fiona Riley

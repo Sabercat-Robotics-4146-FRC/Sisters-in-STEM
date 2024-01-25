@@ -49,13 +49,11 @@ export default function Page() {
           </header>
           <main className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-4">
             <Supporter donator="Sabercat Robotics FIRST Team #4146" src="head-raw-large.png" imgAlt="Sabercat Robotics logo" imgWidth={4620} imgHeight={3570} website="https://www.sabercatrobotics.com/" />
-            <Supporter donator="Scottsdale Community College" src="scc.svg" imgAlt="Scottsdale Community College logo" imgWidth={4620} imgHeight={3570} website="https://www.scottsdalecc.edu/" />
-            <Supporter donator="Saguaro Math & Science Academy" src="smsa.png" imgAlt="Saguaro Math & Science Academy logo" imgWidth={649} imgHeight={627} website="https://www.saguaromsaboosters.org/" />
+            <Supporter donator="Saguaro Math & Science Academy Boosters" src="smsa.png" imgAlt="Saguaro Math & Science Academy logo" imgWidth={649} imgHeight={627} website="https://www.saguaromsaboosters.org/" />
             <Supporter donator="Battel Engineering, Inc." src="battel-engineering.webp" imgAlt="Battel Engineering, Inc. logo" imgWidth={960} imgHeight={720} website="http://battel-engineering.com/" />
             <Supporter donator="Farley Family Charitable Foundation" src="farley-foundation.png" imgAlt="Farley Family Charitable Foundation logo" imgWidth={1494} imgHeight={799} />
             <Supporter donator="SUSD Foundation" src="susd-foundation.png" imgAlt="SUSD Foundation logo" imgWidth={4620} imgHeight={3570} website="https://susdfoundation.org/" />
             <Supporter donator="Northrop Grumman" src="northrop-grumman.png" imgAlt="Northrop Grumman logo" imgWidth={4620} imgHeight={3570} website="https://www.northropgrumman.com/" />
-            <Supporter donator="ASU Luminosity Lab" src="asu-luminosity-lab.jpg" imgAlt="ASU Luminosity Lab logo" imgWidth={1080} imgHeight={248} website="https://theluminositylab.com/" />
           </main>
         </section>
         <section className="text-neutral-900/75">
