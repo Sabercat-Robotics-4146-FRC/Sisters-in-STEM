@@ -37,11 +37,11 @@ export default function Page() {
             <b>High School Accomplishments:</b> Leo participated in many academic clubs, including the Math and Science Academy, the National Honors Society, and CyberPatriot. He was heavily focused on academics, while integrating his creativity into his endeavors. After completing Graphic Design courses, he noticed a need for design throughout his school. He received his certification in Graphic Design which allowed him to design logos and posters for the school.
           </Leader>
           <Leader name="Lindsay Baptiste" position="Volunteer Coordinator" src="laney-olson.webp">
-            <b>Graduation Year:</b> 2024 
+            <b>Graduation Year:</b> 2024<br />
             <b>High School Accomplishments:</b> TBD
           </Leader>
           <Leader name="Aarohi Ghorpade" position="Creative Director" src="aarohi-ghorpade.JPG">
-            <b>Graduation Year:</b> 2024 
+            <b>Graduation Year:</b> 2024<br />
             <b>High School Accomplishments:</b> TBD
           </Leader>
           {/* <Leader name="Fiona Riley" position="Unknown" src="laney-olson.webp">
