@@ -10,6 +10,8 @@ export default function Footer() {
         <nav className="flex flex-col flex-wrap text-slate-100">
           <InlineLink href="/about-us" white>About Us</InlineLink>
           <InlineLink href="/initiatives" white>Initiatives</InlineLink>
+          <InlineLink href="/initiatives/cybersis" white>CyberSiS</InlineLink>
+          <InlineLink href="/archive" white>SiS Archive</InlineLink>
         </nav>
       </section>
       <section className="w-full md:w-max md:max-w-xs">
