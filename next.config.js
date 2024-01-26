@@ -1,5 +1,12 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 const nextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx"],
+  i18n: {
+    // "es", "fr", "ja"
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+  trailingSlash: false,
   async redirects() {
     return [
       {
@@ -54,6 +61,8 @@ const nextConfig = {
       },
     ];
   },
+  productionBrowserSourceMaps: true,
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig
