@@ -7,6 +7,19 @@ const nextConfig = {
     defaultLocale: "en",
   },
   trailingSlash: false,
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: "default-src 'self'; connect-src 'none'; child-src 'none'; object-src 'none'; img-src 'self' blob: data:; frame-ancestors: none;",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
@@ -64,4 +77,4 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
