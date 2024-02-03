@@ -6,11 +6,11 @@ export default function Page() {
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
       <PageHeader title="CyberSis" />
       <main className="px-6 min-[480px]:px-12">
-        <main className="flex flex-col flex-wrap gap-2">
+        <main className="flex flex-col flex-wrap space-x-2 space-y-2">
           <header>
             <h3 className="text-4xl text-pink-600">What is CyberSiS?</h3>
           </header>
-          <main className="flex flex-col flex-wrap sm:flex-row sm:flex-nowrap justify-center gap-4">
+          <main className="flex flex-col flex-wrap sm:flex-row sm:flex-nowrap justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <p className="basis-full sm:basis-3/4">
               CyberSiS is an initiative launched with support from employees of Northrop Grumman in partnership with CyberPatriot. This program strives to teach students in grades K-6 about Cybersecurity.<br />
               With our increasingly technology-based future, it is becoming more and more important to educate students on internet safety. We decided we wanted to make a difference.<br />
@@ -21,7 +21,7 @@ export default function Page() {
             </p>
             <ExpandableImage src="/assets/img/sis-and-cyberpatriot.webp" alt="SiS and Cyberpatriot" sizes="(min-width: 640px) 40vw, 80vw" width={582} height={486} className="basis-full sm:basis-1/4" />
           </main>
-          <footer className="flex flex-col flex-wrap gap-2">
+          <footer className="flex flex-col flex-wrap space-x-2 space-y-2">
             <header>
               <h3 className="text-4xl text-pink-600">Special Thanks</h3>
             </header>

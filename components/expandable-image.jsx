@@ -111,7 +111,7 @@ export default function ExpandableImage({ src, alt, width, height, sizes, classN
   return (
     <button onClick={function(Event) {
       ExpandImage(Event, src);
-    }} className={cn("object-cover overflow-clip w-full lg:h-full", buttonClassName)}>
+    }} className={cn("object-cover overflow-hidden w-full lg:h-full", buttonClassName)}>
       <Image sizes={sizes} src={src} alt={alt} width={width} height={height} className={cn("transition-transform duration-500 hover:scale-105 focus-visible:scale-105 object-cover h-full w-full", className)} />
     </button>
   );

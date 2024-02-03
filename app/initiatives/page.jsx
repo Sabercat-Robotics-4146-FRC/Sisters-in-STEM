@@ -4,7 +4,7 @@ import InlineLink from "/components/inline-link";
 
 function Initiative({ title, src, alt, imgHeight, imgWidth, left, children }) {
   return (
-    <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center gap-8">
+    <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
       {left ? <aside className="basis-1/2 hidden lg:block">
         <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 40vw, 80vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
       </aside> : ""}
@@ -26,7 +26,7 @@ export default function Page() {
     <main className="px-3 min-[320px]:px-6 md:px-12 py-3 min-[320px]:py-6 md:py-12">
       <PageHeader title="Initiatives" />
       <main className="px-6 min-[480px]:px-12">
-        <main className="flex flex-col flex-wrap gap-4">
+        <main className="flex flex-col flex-wrap space-y-4">
           <Initiative title="The Annual SiS STEM Celebration" src="annual-celebration.webp" alt="Boy looking through microscope to learn about biology." imgHeight={1707} imgWidth={2560}>
             <p>Every year, SiS welcomes students ages 5-15 to Saguaro High School to spend an afternoon exploring the wonderful world of STEM. We offer live, hands-on experiments in all areas of STEM, no matter if your student is a geology genius, a physics fiend - or has no experience, but lots of questions about STEM! Along with our industry and academic partners, we invite students of all ages and walks of life to see, try, and experiment with the amazing world of STEM; to show them the infinite possibilities and fun in the fields of science.</p>
           </Initiative>

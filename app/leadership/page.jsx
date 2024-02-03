@@ -10,7 +10,7 @@ export function Leader({ name, position, src, children }) {
         <CardTitle className="text-4xl">{name}</CardTitle>
         <CardDescription className="text-xl">{position}</CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center md:items-start gap-x-4">
+      <CardContent className="flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-center items-center md:items-start space-x-4">
         <Image src={`/assets/img/${src}`} className="basis-1/2 object-cover rounded-lg" alt={`Image of ${name}`} width={250} height={250} sizes="(max-width: 1024px) 80vw, 40vw"></Image>
         <p className="basis-1/2 text-start">{children}</p>
       </CardContent>

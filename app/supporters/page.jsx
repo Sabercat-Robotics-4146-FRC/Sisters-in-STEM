@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "/components/ui/card";
 function Supporter({ donator, src, imgAlt, imgWidth, imgHeight, website }) {
   return (
     <Card>
-      <CardContent className="flex flex-col flex-wrap sm:flex-row sm:flex-nowrap justify-center items-center p-6 gap-2">
+      <CardContent className="flex flex-col flex-wrap sm:flex-row sm:flex-nowrap justify-center items-center p-6 space-x-2 space-y-2">
         <ExpandableImage src={`/assets/img/${src}`} alt={imgAlt} sizes="(min-width: 1586px) 30vw, (min-width: 1024px) 60vw, 90vw" width={imgWidth} height={imgHeight} className="object-contain max-h-40" />
         <main className="space-y-2">
           <h5 className="text-2xl">{donator}</h5>
@@ -38,7 +38,7 @@ export default function Page() {
           <header className="mb-2">
             <h4 className="text-3xl text-pink-600">Volunteers</h4>
           </header>
-          <main className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center items-center px-8 gap-8">
+          <main className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center items-center px-8 space-y-8 lg:space-y-0 lg:space-x-8">
             <ExpandableImage sizes="100vw" src="/assets/img/sistersinstem.jpg" alt="Picture 1 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
             <ExpandableImage sizes="100vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
           </main>

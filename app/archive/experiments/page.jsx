@@ -8,7 +8,7 @@ export default function Page() {
         <header className="mb-4">
           <h3 className="text-4xl text-pink-600">Archives: SiS Experiments</h3>
         </header>
-        <main className="flex flex-col flex-wrap gap-4">
+        <main className="flex flex-col flex-wrap space-y-4">
           
         </main>
       </main>

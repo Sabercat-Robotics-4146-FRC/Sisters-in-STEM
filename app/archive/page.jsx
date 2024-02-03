@@ -13,7 +13,7 @@ export default function Page() {
         <header className="mb-4">
           <h3 className="text-4xl text-pink-600">Archives</h3>
         </header>
-        <main className="flex flex-col flex-wrap gap-4">
+        <main className="flex flex-col flex-wrap space-y-4">
           <section className="space-y-2">
             <header className="mb-2">
               <h4 className="text-3xl text-pink-600">SiS Experiment Archive</h4>

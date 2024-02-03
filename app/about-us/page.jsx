@@ -4,7 +4,7 @@ import InlineLink from "/components/inline-link";
 
 function Section({ title, src, alt, imgHeight, imgWidth, left, children }) {
   return (
-    <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center gap-8">
+    <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
       {left ? <aside className="basis-1/2 hidden lg:block">
         <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 40vw, 80vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
       </aside> : ""}
@@ -29,7 +29,7 @@ export default function Page() {
         <header className="mb-4">
           <h3 className="text-4xl text-pink-600">About Us</h3>
         </header>
-        <main className="flex flex-col flex-wrap gap-4">
+        <main className="flex flex-col flex-wrap space-y-4">
           <Section title="Our Beginnings" src="logo.webp" alt="Sisters in STEM robot" imgHeight={2000} imgWidth={2000}>
             <p>Inspired by the cancellation of a local STEM event for girls in 2018, three Saguaro FRC Robotics students decided to create an event of their own. In just three weeks, they created a live STEM fair for students aged 5-15 and their parents across the Valley. With over 200 attendees, 45 student volunteers, and over 50 Phoenix professional and academic participants, our first year was a wild success - and taught us how much more we could do for our community!</p>
           </Section>

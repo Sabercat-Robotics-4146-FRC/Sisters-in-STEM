@@ -39,7 +39,7 @@ export default function Header() {
   });
 
   return (
-    <header className="sticky top-0 z-50 flex flex-wrap items-center justify-between md:justify-center gap-2 py-5 px-4 bg-white border-b shadow-black shadow-[0_-8px_16px]">
+    <header className="sticky top-0 z-50 flex flex-wrap items-center justify-between md:justify-center space-x-2 space-y-2 py-5 px-4 bg-white border-b shadow-black shadow-[0_-8px_16px]">
       <button type="button" className="md:hidden" onClick={function() {
         MobileNav.current.classList.toggle("-translate-x-full");
         Heading.current.classList.toggle("text-pink-600");
@@ -59,7 +59,7 @@ export default function Header() {
           <path d="M0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32z" className="origin-center transition-transform duration-500 ease-in-out"></path>
           <path d="M448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" className="origin-left transition-transform duration-500 ease-in-out"></path>
         </svg>
-        <nav ref={MobileNav} className="-translate-x-full transition-transform duration-500 ease-in-out inset-0 fixed w-screen h-screen bg-pink-600 -z-50 flex flex-col flex-wrap justify-center items-center gap-y-8 text-2xl text-white">
+        <nav ref={MobileNav} className="-translate-x-full transition-transform duration-500 ease-in-out top-0 left-0 fixed w-screen h-screen bg-pink-600 -z-50 flex flex-col flex-wrap justify-center items-center space-y-8 text-2xl text-white">
           <MobileLink href="/" path={Path}>Home</MobileLink>
           <MobileLink href="/about-us" path={Path}>About Us</MobileLink>
           <MobileLink href="/initiatives" path={Path}>Initiatives</MobileLink>
@@ -72,7 +72,7 @@ export default function Header() {
         <Image className="w-14" src="/assets/img/logo.webp" alt="Sisters in STEM robot" height={50} width={50} quality={100}></Image>
         <h1 ref={Heading} className="hidden min-[400px]:block text-pink-600 text-4xl transition-colors duration-500 ease-in-out">Sisters in STEM</h1>
       </Link>
-      <nav className="hidden w-full md:flex flex-nowrap justify-center items-center gap-x-8 tracking-wide">
+      <nav className="hidden w-full md:flex flex-nowrap justify-center items-center space-x-8 tracking-wide">
         <DesktopLink href="/" path={Path}>Home</DesktopLink>
         <DesktopLink href="/about-us" path={Path}>About Us</DesktopLink>
         <DesktopLink href="/initiatives" path={Path}>Initiatives</DesktopLink>
