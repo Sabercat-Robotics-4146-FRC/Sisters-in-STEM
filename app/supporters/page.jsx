@@ -7,7 +7,7 @@ function Supporter({ donator, src, imgAlt, imgWidth, imgHeight, website }) {
   return (
     <Card>
       <CardContent className="flex flex-col flex-wrap sm:flex-row sm:flex-nowrap justify-center items-center p-6 space-x-2 space-y-2">
-        <ExpandableImage src={`/assets/img/${src}`} alt={imgAlt} sizes="(min-width: 1586px) 30vw, (min-width: 1024px) 60vw, 90vw" width={imgWidth} height={imgHeight} className="object-contain max-h-40" />
+        <ExpandableImage src={`/assets/img/${src}`} alt={imgAlt} sizes="(min-width: 1586px) 10vw, (min-width: 1024px) 20vw, 30vw" width={imgWidth} height={imgHeight} className="object-contain max-h-40" />
         <main className="space-y-2">
           <h5 className="text-2xl">{donator}</h5>
           {website ? <InlineLink external href={website}>Visit their website</InlineLink> : ""}

@@ -6,7 +6,7 @@ function Initiative({ title, src, alt, imgHeight, imgWidth, left, children }) {
   return (
     <section className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center space-y-8 lg:space-y-0 lg:space-x-8">
       {left ? <aside className="basis-1/2 hidden lg:block">
-        <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 40vw, 80vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
+        <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 25vw, 50vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
       </aside> : ""}
       <main className="text-neutral-900/75 basis-1/2">
         <header className="mb-2 text-center">
@@ -15,7 +15,7 @@ function Initiative({ title, src, alt, imgHeight, imgWidth, left, children }) {
         {children}
       </main>
       <aside className={`basis-1/2 block ${left ? "lg:hidden" : ""}`}>
-        <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 40vw, 80vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
+        <ExpandableImage src={`/assets/img/${src}`} alt={alt} sizes="(min-width: 1024px) 25vw, 50vw" height={imgHeight} width={imgWidth} buttonClassName="rounded-xl" />
       </aside>
     </section>
   );
