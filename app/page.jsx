@@ -51,7 +51,7 @@ export default function Home() {
           <Image src="/assets/img/stem-sisters.webp" className="object-cover h-full w-full" alt="3 photos consisting of female students learning about STEM through experiments." width={450} height={400} quality={100} priority sizes="(max-width: 768px) 80vw, 40vw" />
         </aside>
         <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl">
-          <Image className="w-28" src="/assets/img/logo.webp" alt="Sisters in STEM robot" height={200} width={200} quality={100} sizes="10vw" />
+          <Image className="w-28" src="/assets/img/logo.webp" alt="Sisters in STEM robot" height={200} width={200} quality={100} sizes="20vw" />
           <h2 className="text-4xl">Sisters in STEM</h2>
           <p className="mb-2">By students, for students.</p>
           <LinkButton href="/about-us">Who We Are</LinkButton>

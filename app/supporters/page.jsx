@@ -39,8 +39,8 @@ export default function Page() {
             <h4 className="text-3xl text-pink-600">Volunteers</h4>
           </header>
           <main className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap justify-center items-center px-8 space-y-8 lg:space-y-0 lg:space-x-8">
-            <ExpandableImage sizes="100vw" src="/assets/img/sistersinstem.jpg" alt="Picture 1 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
-            <ExpandableImage sizes="100vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
+            <ExpandableImage sizes="(max-width: 1024px) 50vw, 25vw" src="/assets/img/sistersinstem.jpg" alt="Picture 1 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
+            <ExpandableImage sizes="(max-width: 1024px) 50vw, 25vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={360} height={240} buttonClassName="rounded-xl" />
           </main>
         </section>
         <section className="text-neutral-900/75 mb-4">

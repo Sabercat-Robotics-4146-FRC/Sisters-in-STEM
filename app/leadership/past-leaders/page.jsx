@@ -1,6 +1,5 @@
 import { Leader } from "../page";
 import PageHeader from "/components/page-header";
-import Image from "next/image";
 
 export default function Page() {
   return (
