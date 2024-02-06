@@ -18,7 +18,7 @@ export default function Page() {
             <h2 className="font-semibold text-start text-3xl text-pink-600">Email</h2>
           </header>
           <main className="w-full text-start">
-            If you'd prefer, you may also contact us <InlineLink external href="mailto:contact@sistersinstem.net">via email</InlineLink> (contact@sistersinstem.net).
+            If you&apos;d prefer, you may also contact us <InlineLink external href="mailto:contact@sistersinstem.net">via email</InlineLink> (contact@sistersinstem.net).
           </main>
         </section>
       </main>
