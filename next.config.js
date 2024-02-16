@@ -1,11 +1,6 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx"],
-  i18n: {
-    // "es", "fr", "ja"
-    locales: ["en"],
-    defaultLocale: "en",
-  },
   trailingSlash: false,
   async headers() {
     return [
