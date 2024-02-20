@@ -66,7 +66,7 @@ export default function Page() {
       <PageHeader title="Archived Experiments" />
       <main className="px-6 min-[480px]:px-12">
         <header className="mb-4">
-          <p className="text-neutral-900">To view the instructions for an experiment, expand the Google Slide, click the three dots at the bottom of the slide, and then click "Open Speaker Notes."</p>
+          <p className="text-neutral-900">To view the instructions for an experiment, expand the Google Slide, click the three dots at the bottom of the slide, and then click &quot;Open Speaker Notes.&quot;</p>
         </header>
         <main className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 justify-center gap-4">
           {
