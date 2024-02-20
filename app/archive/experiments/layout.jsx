@@ -37,12 +37,12 @@ export const metadata = {
     creatorId: "1067297456",
   },
   alternates: {
-    canonical: "/archive",
+    canonical: "/archive/experiments",
     languages: {
-      "en": "/archive",
-      // "es": "/es/archive",
-      // "fr": "/fr/archive",
-      // "ja": "/ja/archive",
+      "en": "/archive/experiments",
+      // "es": "/es/archive/experiments",
+      // "fr": "/fr/archive/experiments",
+      // "ja": "/ja/archive/experiments",
     },
   },
 };
