@@ -9,7 +9,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: process.env.NODE_ENV === "development" ? "default-src 'self' 'unsafe-inline' 'unsafe-eval';" : "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; child-src 'none'; object-src 'none'; img-src 'self' blob: data:;",
+            value: process.env.NODE_ENV === "development" ? "default-src 'self' 'unsafe-inline' 'unsafe-eval' https://docs.google.com/" : "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; child-src 'none'; object-src 'none'; img-src 'self' blob: data:; iframe-src https://docs.google.com;",
           },
         ],
       },

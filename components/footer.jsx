@@ -4,7 +4,7 @@ import InlineLink from "/components/inline-link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col flex-wrap md:justify-center bg-pink-600 px-8 py-10 md:py-20 shadow-black shadow-[0_8px_16px]">
+    <footer className="flex flex-col flex-wrap md:justify-center bg-pink-600 px-8 py-10 md:py-20 shadow-black shadow-[0_8px_16px] mt-auto">
       <main className="flex flex-wrap md:justify-center space-y-8 md:space-y-0 md:space-x-8">
         <section className="w-full md:w-max md:max-w-xs">
           <h2 className="font-medium text-slate-100 text-3xl">What We Do</h2>

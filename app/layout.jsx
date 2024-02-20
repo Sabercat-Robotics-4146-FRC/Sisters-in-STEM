@@ -184,7 +184,7 @@ const FredokaFont = Fredoka({
 export default function RootLayout({children}) {
   return (
     <html className={`scroll-smooth selection:bg-pink-400/60 antialiased ${PoppinsFont.className} ${FredokaFont.variable}`} lang={locale}>
-      <body className="text-lg leading-7 text-neutral-900">
+      <body className="text-lg leading-7 text-neutral-900 flex flex-col flex-wrap min-h-screen">
         <Header />
         {children}
         <Footer />
