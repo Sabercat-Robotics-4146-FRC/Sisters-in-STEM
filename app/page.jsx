@@ -60,16 +60,16 @@ export default function Home() {
         </main>
       </header>
       <main className="flex flex-col flex-wrap justify-center items-center text-center px-4 mb-8 text-neutral-900/75">
-        {/* <section className="px-2 py-12 relative flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center text-center text-black">
+        <section className="px-2 py-12 relative flex flex-col flex-wrap md:flex-row md:flex-nowrap justify-center text-center text-black">
           <aside className="w-full md:w-1/2">
-            <Image src="/assets/img/barrett-jackson.jpg" className="object-contain p-2 h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} sizes="(max-width: 768px) 80vw, 40vw" />
+            <Image src="/assets/img/saint-vincent-de-paul.svg" className="object-contain p-2 h-full w-full" alt="Ultimate Family Play Date & Concert" width={450} height={400} quality={100} sizes="(max-width: 768px) 80vw, 40vw" />
           </aside>
           <main className="flex flex-col flex-wrap justify-center items-center bg-pink-200 px-10 py-12 text-xl md:max-w-[40%]">
-            <h2 className="text-4xl">Come See Us!</h2>
-            <p className="mb-2">SiS will be at the Barrett-Jackson STEM Fest! Come visit us on January 20th from 8 A.M. to 5 P.M. at WestWorld of Scottsdale.</p>
-            <LinkButton href="https://barrett-jackson.com/" external>Learn More</LinkButton>
+            <h2 className="text-4xl">Our Next Event</h2>
+            <p className="mb-2">SiS will be at Saint Vincent de Paul on February 29th from 4 P.M. to 6 P.M. at the NextPhase Family Dining Room.</p>
+            <LinkButton href="https://www.stvincentdepaul.net/locations/nextphase-family-dining-room" external>Learn More</LinkButton>
           </main>
-        </section> */}
+        </section>
         <section className="flex flex-col flex-wrap justify-center items-center mb-8">
           <header className="px-6 mb-4">
             <h2 className="text-3xl">Sisters in STEM: Past Events</h2>
