@@ -28,19 +28,31 @@ const FAQ = [
 export const ImageCarousel = [
   {
     src: "stem-sisters.webp",
-    alt: "example alt",
+    alt: "Multiple students experimenting through SiS experiments",
   },
   {
     src: "volunteers.webp",
-    alt: "example alt",
+    alt: "A group picture of SiS volunteers",
   },
   {
     src: "roadshow.webp",
-    alt: "example alt",
+    alt: "SiS volunteers at SiS roadshow event helping young students discover their passion for STEM",
   },
   {
     src: "jada-reading.webp",
-    alt: "example alt",
+    alt: "SiS volunteer answering a student's question during Jada Reading event",
+  },
+  {
+    src: "sis-coordinator.JPG",
+    alt: "SiS volunteer coordinator helping young student with experiment",
+  },
+  {
+    src: "smiling-sis-volunteers.JPG",
+    alt: "SiS volunteers smiling during experiment",
+  },
+  {
+    src: "sis-volunteer-help.JPG",
+    alt: "SiS volunteers walking students and parents through experiments",
   },
 ];
 export default function Home() {
@@ -76,7 +88,7 @@ export default function Home() {
           </header>
           <main className="px-16">
             <AutoplayCarousel delay={5000}>
-              <CarouselContent>
+              <CarouselContent className="items-center">
                 {
                   ImageCarousel.map(function(ImageProps) {
                     return (
