@@ -26,7 +26,7 @@ export default function Page() {
             </header>
             <main className="px-16">
               <AutoplayCarousel delay={5000}>
-                <CarouselContent>
+                <CarouselContent className="items-center">
                   {
                     ImageCarousel.map(function(ImageProps) {
                       return (

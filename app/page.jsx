@@ -54,7 +54,39 @@ export const ImageCarousel = [
     src: "sis-volunteer-help.JPG",
     alt: "SiS volunteers walking students and parents through experiments",
   },
-];
+  {
+    src: "boys-learning-stem.JPG",
+    alt: "2 young boys being taught a STEM experiment by SiS volunteer",
+  },
+  {
+    src: "girl-on-sis-chair.JPG",
+    alt: "Young girl spinning on a chair created by the SiS team",
+  },
+  {
+    src: "hopi-students-experiments.JPG",
+    alt: "Multiple young girls experimenting with multiple pre-made experiments set up by the SiS team",
+  },
+  {
+    src: "sound-of-thunder.JPG",
+    alt: "Girl being taught by excited SiS volunteer on how a simple construction can make the sound of thunder",
+  },
+  {
+    src: "young-boys-sis-experiments.JPG",
+    alt: "Two SiS volunteers teaching 2 young boys a STEM experiment",
+  },
+  {
+    src: "girls-teaching-girls.JPG",
+    alt: "TBD",
+  },
+  {
+    src: "parent-and-child.JPG",
+    alt: "TBD",
+  },
+  {
+    src: "hopi-sis-volunteers-2024.JPG",
+    alt: "TBD",
+  },
+  ];
 export default function Home() {
  return (
     <main>
