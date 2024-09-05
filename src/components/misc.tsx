@@ -3,7 +3,7 @@ import { cn } from "~/lib/utils";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/components/ui/card";
 
-const buttonClass: string = "transition-colors bg-transparent duration-500 text-pink-600 overflow-hidden border-2 px-6 py-3 leading-none border-pink-600 font-medium relative before:absolute before:h-full before:w-full before:-z-[1] before:scale-x-0 before:top-0 before:left-0 before:bg-pink-600 before:origin-left before:[transition:transform_500ms_0ms,transform-origin_0ms_500ms] hover:before:scale-x-100 hover:before:origin-right focus-visible:before:scale-x-100 focus-visible:before:origin-right hover:text-slate-100 focus-visible:text-slate-100";
+const buttonClass = "transition-colors bg-transparent duration-500 text-pink-600 overflow-hidden border-2 px-6 py-3 leading-none border-pink-600 font-medium relative before:absolute before:h-full before:w-full before:-z-[1] before:scale-x-0 before:top-0 before:left-0 before:bg-pink-600 before:origin-left before:[transition:transform_500ms_0ms,transform-origin_0ms_500ms] hover:before:scale-x-100 hover:before:origin-right focus-visible:before:scale-x-100 focus-visible:before:origin-right hover:text-slate-100 focus-visible:text-slate-100";
 export function LinkButton({ className, ...linkProps }: React.ComponentProps<typeof Link>) {
   return (
     <Link {...linkProps} className={cn(buttonClass, className)} />

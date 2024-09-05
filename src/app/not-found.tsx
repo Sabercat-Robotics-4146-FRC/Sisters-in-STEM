@@ -1,6 +1,4 @@
 import { type Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import { InlineLink, LinkButton } from "~/components/misc";
 
 const url = "https://www.sistersinstem.net";

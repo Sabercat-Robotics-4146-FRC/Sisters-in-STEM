@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-import { Metadata } from "next";
+import { type Metadata } from "next";
 import { Fredoka, Poppins } from "next/font/google";
 import { cn } from "~/lib/utils";
 import { Footer, Header } from "~/components/global";
