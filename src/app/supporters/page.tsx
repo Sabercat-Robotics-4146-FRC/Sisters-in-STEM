@@ -44,7 +44,7 @@ export default function Page() {
             <Carousel>
               <CarouselContent className="items-center cursor-grab active:cursor-grabbing">
                 <CarouselItem className="md:basis-1/2">
-                  <Image sizes="(max-width: 768px) 60vw, 30vw" src="/assets/img/gigitheriveter.jpg" alt="Picture 1 of our volunteers" width={2400} height={1600} className="rounded-xl drop-shadow" />
+                  <Image sizes="(max-width: 768px) 60vw, 30vw" src="/assets/img/gigitheriveter.JPG" alt="Picture 1 of our volunteers" width={2400} height={1600} className="rounded-xl drop-shadow" />
                 </CarouselItem>
                 <CarouselItem className="md:basis-1/2">
                   <Image sizes="(max-width: 768px) 60vw, 30vw" src="/assets/img/volunteers.webp" alt="Picture 2 of our volunteers" width={2560} height={1920} className="rounded-xl drop-shadow" />
