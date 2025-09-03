@@ -63,7 +63,7 @@ export default function Page() {
         </header>
         <main className="text-neutral-900/75 grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
           <Leader name="Fiona Riley" position="Co-President of Operations" src="fiona-riley.JPG">
-            <b>Graduation Year:</b> 2026<br />
+            <b>Graduation Year:</b> 2030<br />
             <b>Time in Sabercat Robotics:</b> Fiona joined Saguaro&apos;s FRC robotics team her sophomore year, working on everything and anything mechanical. Fiona is now the mechanical, design, and electrical lead for the team! Fiona has been involved in Sisters in STEM since she was 15, and spent the last school year working on the advisory board. <br />
             <b>High School Accomplishments:</b> Fiona is a two-year Scottsdale Math and Science academy ambassador, along with the Secretary of the school’s chapter of the National Honor Society. She is also a member of the SUSD Student Advisory Board, Junior President of the Mentor Ambassador Program, and the scheduling chair of Saguaro&apos;s Chemistry Olympiad. Outside of school, SiS, and robotics, Fiona is a Spanish tutor and a bookworm!
           </Leader>
